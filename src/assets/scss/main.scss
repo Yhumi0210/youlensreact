@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'junkga-regular';
+  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-bold';
+  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-thin';
+  src: url('../../fonts/Jungka-Book.otf') format('opentype')
+}
+
+//.roboto-medium {
+//  font-family: "Roboto", sans-serif;
+//  font-weight: 500;
+//  font-style: normal;
+//}
+
+// colors
+
+$light-blue: #C7D5D8;
+$dark-blue: #3F4851;
+$white: #FFFFFF;
+
+// fonts
+
+$bold: 'junkga-bold', sans-serif;
+$regular: 'junkga-regular', sans-serif;
+$thin: 'junkga-thin', sans-serif;
+
+// font weight
+
+$weight: 500;
+
+// font size
+
+
+
+// font style
+
+$style: normal;
+
+* {
+  font-family: $regular;
+  // font-weight: $weight;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 1.6s ease-in-out;
+  &:hover {
+    transform: rotate(-360deg);
+  }
+}
+
+.hero {
+  z-index: 1;
+  position: relative;
+  //background-color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem 0 2rem;
+  &__brand {
+    display: flex;
+    text-decoration: none;
+    color: $light-blue;
+    font-family: $regular;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: $dark-blue 2px 2px 5px;
+  }
+  &__nav {
+    width: 50%;
+    &__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      list-style-type: none;
+      letter-spacing: 0.15rem;
+      cursor: pointer;
+      &__page {
+        text-transform: uppercase;
+        &__a {
+          position: relative;
+          text-decoration: none;
+          overflow: hidden;
+          color: $light-blue;
+          font-size: 1.2rem;
+          text-align: center;
+          text-shadow: $dark-blue 2px 2px 2px;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease, left 300ms ease, right 300ms ease;
+          }
+          &:before {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:after {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:hover:before, &:hover:after {
+            width: 100%;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  //background-color: $dark-blue;
+  height: 100%;
+  margin-top: -7rem;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    &__video {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  &__h1 {
+    position: relative;
+    z-index: 1;
+    margin: -24rem 8rem 0 8rem;
+    color: $light-blue;
+    font-size: 2.5rem;
+    text-shadow: $dark-blue 2px 2px 2px;
+  }
+  &__arrow {
+    position: relative;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    color: $light-blue;
+    align-self: center;
+    margin-top: 3rem;
+  }
+}
+
+.project {
+  background-color: $white;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    align-self: flex-end;
+    margin: 4.5rem 2rem 0 0;
+  }
+}
+
+.selfportrait {
+  background-color: $light-blue;
+  display: flex;
+  flex-direction: column;
+  color: $dark-blue;
+  padding: 2rem 8rem 2rem 8rem;
+  &__container {
+    align-self: flex-end;
+    margin: 0 -6rem 0 0;
+  }
+  &__title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  &__line {
+    display: block;
+    background-color: $dark-blue;
+    height: 2px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+  &__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    &__me {
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+    &__img {
+      width: 40%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  &__service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      &__icon {
+        margin-top: 1rem;
+        width: 4rem;
+        height: 4rem;
+      }
+      &__text {
+        margin: 1rem 0 1rem 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $dark-blue;
+  color: $light-blue;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem 2rem 8rem;
+  &__container {
+    align-self: flex-end;
+    margin: 0 -6rem 2rem 0;
+  }
+  &__info {
+    &__title {
+      font-size: 2.5rem;
+      &:after {
+        content: "";
+        display: block;
+        background-color: $light-blue;
+        width: 100%;
+        height: 2px;
+        margin: 0.5rem 0 0.8rem 0;
+      }
+    }
+    &__contact {
+      &:after {
+        content: "";
+        display: block;
+        background-color: $light-blue;
+        width: 100%;
+        height: 2px;
+        margin: 0.7rem 0 0.8rem 0;
+      }
+      &__number {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__phone {
+          font-family: $thin;
+          font-size: 1.5rem;
+        }
+        &__line {
+          display: block;
+          background-color: $light-blue;
+          height: 1.5rem;
+          width: 2px;
+        }
+        &__mail {
+          font-family: $thin;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &__social {
+      margin-bottom: 4rem;
+      &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__insta {
+          font-family: $thin;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $light-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
+        }
+        &__behance {
+          font-family: $thin;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $light-blue;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__rights {
+      font-family: $thin;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}

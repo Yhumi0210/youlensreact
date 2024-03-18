@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './jsx/Header'
+import MainSection from "./jsx/MainSection";
+import ProjectSection from "./jsx/ProjectSection";
+import SelfPortraitArticle from "./jsx/SelfPortraitArticle";
+import Footer from "./jsx/Footer"; // Assurez-vous que le chemin est correct
+// Importez les autres composants ici
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div>
+        <Header />
+        <MainSection />
+        <ProjectSection />
+        <SelfPortraitArticle />
+        <Footer />
+      </div>
+  )
 }
 
-export default App;
+export default App
