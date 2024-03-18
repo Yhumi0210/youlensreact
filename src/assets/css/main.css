@@ -124,13 +124,88 @@
 
 .project {
   background-color: #FFFFFF;
-  height: 50rem;
   display: flex;
   flex-direction: column;
 }
-.project__container {
+.project__logo {
   align-self: flex-end;
   margin: 4.5rem 2rem 0 0;
+}
+.project__container {
+  margin-top: -3rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+}
+.project__container__display {
+  font-size: 1.2rem;
+  color: #3F4851;
+  text-transform: uppercase;
+  font-family: "junkga-regular", sans-serif;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  position: relative;
+}
+.project__container__display:before, .project__container__display:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3F4851;
+  transition: width 300ms ease, left 300ms ease, right 300ms ease;
+}
+.project__container__display:before {
+  left: 50%;
+  right: 50%;
+  transition-delay: 100ms;
+}
+.project__container__display:after {
+  left: 50%;
+  right: 50%;
+  transition-delay: 100ms;
+}
+.project__container__display:hover:before, .project__container__display:hover:after {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.project__gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  margin: 4rem 8rem 6rem 8rem;
+}
+.project__gallery__item {
+  color: #3F4851;
+}
+.project__gallery__item__media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project__gallery__item__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project__gallery__item__info__title {
+  font-size: 1.2rem;
+  color: #3F4851;
+  text-transform: uppercase;
+  font-family: "junkga-regular", sans-serif;
+  letter-spacing: 0.08rem;
+}
+.project__gallery__item__info__type {
+  font-size: 1.2rem;
+  color: #3F4851;
+  text-transform: uppercase;
+  font-family: "junkga-thin", sans-serif;
+  letter-spacing: 0.08rem;
 }
 
 .selfportrait {
@@ -159,15 +234,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   margin: 1rem 0 1rem 0;
 }
 .selfportrait__text__me {
+  width: 50%;
   font-size: 1.5rem;
   line-height: 3rem;
+  text-indent: 3rem;
+  text-align: justify;
 }
 .selfportrait__text__img {
-  width: 40%;
+  width: 50%;
   height: auto;
   object-fit: contain;
 }
@@ -177,7 +256,7 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 2rem 2rem 2rem;
 }
 .selfportrait__service__detail {
   display: flex;

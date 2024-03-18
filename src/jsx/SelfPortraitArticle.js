@@ -4,7 +4,7 @@ import iconCamera from '../img/icons/iconcamera.svg'
 import iconPhoto from '../img/icons/iconphoto.svg'
 import iconDrone from '../img/icons/icondrone.svg'
 import iconMontage from '../img/icons/iconmontage.svg'
-import portraitGuillaume from '../img/img/portraitguillaume.webp'
+import portraitGuillaume from '../img/photo/portraitguillaume.webp'
 
 function SelfPortraitArticle() {
     return (
@@ -16,18 +16,18 @@ function SelfPortraitArticle() {
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__me">
-                    Je m’appelle Guillaume Court, Ancien lighter<br />
-                    dans le cinéma d’animation 3D, je me suis re-<br />
-                    converti dans la réalisation vidéo pour retrouver<br />
-                    le contact humain et le travail en extérieur<br />
-                    qui me manquaient dans mon quotidien.<br />
+                    Je m’appelle Guillaume Court, Ancien lighter
+                    dans le cinéma d’animation 3D, je me suis re converti
+                    dans la réalisation vidéo pour retrouver
+                    le contact humain et le travail en extérieur
+                    qui me manquaient dans mon quotidien.
                     <br />
-                    Mes compétences acquises au sein des studios<br />
-                    de long métrages d’animation m’ont permis<br />
-                    de développer un œil très critique et exigeant<br />
-                    quant à la qualité artistique d’une image.<br />
+                    Mes compétences acquises au sein des studios
+                    de long métrages d’animation m’ont permis
+                    de développer un œil très critique et exigeant
+                    quant à la qualité artistique d’une image.
                     <br />
-                    Je réalise mes vidéos entièrement, de la prise<br />
+                    Je réalise mes vidéos entièrement, de la prise
                     de vue jusqu’à la post-production.
                 </p>
                 <img className="selfportrait__text__img" src={portraitGuillaume} alt="portrait de Guillaume" />
