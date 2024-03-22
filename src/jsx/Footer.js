@@ -21,7 +21,7 @@ function Footer() {
                 <section className="footer__info__social">
                     <div className="footer__info__social__link">
                         <a className="footer__info__social__link__insta" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Instagram</a>
-                        <a className="footer__info__social__link__behance" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Behance</a>
+                        {/*<a className="footer__info__social__link__behance" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Behance</a>*/}
                     </div>
                 </section>
                 <p className="footer__info__rights">© 2024 Youlens. All Rights Reserved.</p>

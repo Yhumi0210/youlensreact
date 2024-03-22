@@ -10,7 +10,7 @@ const medias = [
     {
         url: 'ODGsPxI4FCA',
         type: 'youtube',
-        title: 'Machin'
+        title: 'Villa Provence - FPV Drone tour'
     },
     {
         url: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -20,7 +20,7 @@ const medias = [
     {
         url: 'bVGJzWWQKM4',
         type: 'youtube',
-        title: 'Machin'
+        title: 'Brasserie Le 80 - Méribel'
     },
     {
         url: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -30,7 +30,7 @@ const medias = [
     {
         url: 'xC0wPoG2aEE',
         type: 'youtube',
-        title: 'Machin'
+        title: 'Domaine Mejan, Lodges  - FPV drone Tour'
     }
 ]
 
