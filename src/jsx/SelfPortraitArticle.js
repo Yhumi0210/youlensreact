@@ -54,17 +54,20 @@ function SelfPortraitArticle() {
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__how">
-                    Youlens est une entreprise de communication vidéo de tous types et
-                    spécialisée dans la vidéo aérienne en drone ou en drone FPV. Je réalise mes
-                    photographies et vidéos entièrement seul, de la prise de vue jusqu’à la post
-                    production. Je peux travailler partout dans le monde.
-                    Les projets vont du mariage à la vidéo corporate d’entreprise en passant par la
-                    couverture d&#39;événements exceptionnels ou encore la mise en avant de lieux culturels
-                    ou historiques. Il m’arrive également de travailler dans un domaine plus technique
-                    dans des usines de fabrications ou dans le BTP.
-                    Une prise de contact débouche sur une discussion autour de votre projet quel qu’il
-                    soit, toutes les idées et envies sont réalisables en vidéo tant qu’elles correspondent à
-                    votre image.
+                    Youlens est une entreprise de communication vidéo de tous types et<br/>
+                    spécialisée dans la vidéo aérienne en drone ou en drone FPV. Je réalise mes<br/>
+                    photographies et vidéos entièrement seul, de la prise de vue jusqu’à la post<br/>
+                    production. Je peux travailler partout dans le monde.<br/>
+                    <br/>
+                    Les projets vont du mariage à la vidéo corporate d’entreprise en passant par la<br/>
+                    couverture d&#39;événements exceptionnels ou encore la mise en avant de lieux culturels<br/>
+                    ou historiques. Il m’arrive également de travailler dans un domaine plus technique<br/>
+                    dans des usines de fabrications ou dans le BTP.<br/>
+                    <br/>
+                    Une prise de contact débouche sur une discussion autour de votre projet quel qu’il<br/>
+                    soit, toutes les idées et envies sont réalisables en vidéo tant qu’elles correspondent à<br/>
+                    votre image.<br/>
+                    <br/>
                     Laissez moi vous en dire plus sur ce qu’est le drone FPV et son intérêt :
                 </p>
             </div>
