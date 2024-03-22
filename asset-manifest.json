@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/youlensreact/static/css/main.14ad2c55.css",
-    "main.js": "/youlensreact/static/js/main.35271259.js",
+    "main.css": "/youlensreact/static/css/main.7499c319.css",
+    "main.js": "/youlensreact/static/js/main.1ee29fb7.js",
     "static/js/453.03e7d6b1.chunk.js": "/youlensreact/static/js/453.03e7d6b1.chunk.js",
     "static/media/Youlens_showreel_2023-20242.mp4": "/youlensreact/static/media/Youlens_showreel_2023-20242.275f5c9ea2abec20365f.mp4",
     "static/media/portraitguillaume.webp": "/youlensreact/static/media/portraitguillaume.738802df74af562e8cb8.webp",
@@ -15,12 +15,12 @@
     "static/media/logoclair.svg": "/youlensreact/static/media/logoclair.6f630d1035d51f54d2aabcc9f61a251f.svg",
     "static/media/logofonce.svg": "/youlensreact/static/media/logofonce.55bada31a23f832f1b35b9435dfaa88f.svg",
     "index.html": "/youlensreact/index.html",
-    "main.14ad2c55.css.map": "/youlensreact/static/css/main.14ad2c55.css.map",
-    "main.35271259.js.map": "/youlensreact/static/js/main.35271259.js.map",
+    "main.7499c319.css.map": "/youlensreact/static/css/main.7499c319.css.map",
+    "main.1ee29fb7.js.map": "/youlensreact/static/js/main.1ee29fb7.js.map",
     "453.03e7d6b1.chunk.js.map": "/youlensreact/static/js/453.03e7d6b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14ad2c55.css",
-    "static/js/main.35271259.js"
+    "static/css/main.7499c319.css",
+    "static/js/main.1ee29fb7.js"
   ]
 }
