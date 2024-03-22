@@ -1,11 +1,3 @@
-@import 'header.scss';
-@import 'mainsection.scss';
-@import 'projectsection.scss';
-@import 'selfportrait.scss';
-@import 'footer.scss';
-
-
-
 @font-face {
   font-family: 'junkga-regular';
   src: url('../../fonts/Jungka-Regular.otf') format('opentype')
@@ -43,18 +35,34 @@ $weight: 500;
 
 $style: normal;
 
-* {
-  font-family: $regular;
-  // font-weight: $weight;
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  width: 3rem;
-  height: 3rem;
-  transition: transform 1s cubic-bezier(.43,1.08,.83,1);
-  &:hover {
-    transform: rotate(360deg);
+.main {
+  //background-color: $dark-blue;
+  height: 100%;
+  margin-top: -16rem;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    &__video {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  &__h1 {
+    position: relative;
+    z-index: 1;
+    margin: -20rem 8rem 0 8rem;
+    color: $light-blue;
+    font-size: 2.5rem;
+    text-shadow: $dark-blue 2px 2px 2px;
+  }
+  &__arrow {
+    position: relative;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    color: $light-blue;
+    align-self: center;
+    margin-top: 10rem;
   }
 }

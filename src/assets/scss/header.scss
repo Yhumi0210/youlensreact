@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'junkga-regular';
+  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-bold';
+  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-thin';
+  src: url('../../fonts/Jungka-Book.otf') format('opentype')
+}
+
+// colors
+
+$light-blue: #C7D5D8;
+$dark-blue: #3F4851;
+$white: #FFFFFF;
+
+// fonts
+
+$bold: 'junkga-bold', sans-serif;
+$regular: 'junkga-regular', sans-serif;
+$thin: 'junkga-thin', sans-serif;
+
+// font weight
+
+$weight: 500;
+
+// font size
+
+
+
+// font style
+
+$style: normal;
+
+.hero {
+  z-index: 1;
+  position: relative;
+  //background-color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem 0 2rem;
+  &__brand {
+    display: flex;
+    text-decoration: none;
+    color: $light-blue;
+    font-family: $regular;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: $dark-blue 2px 2px 5px;
+  }
+  &__nav {
+    width: 50%;
+    &__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      list-style-type: none;
+      letter-spacing: 0.15rem;
+      cursor: pointer;
+      &__page {
+        text-transform: uppercase;
+        &__a {
+          position: relative;
+          text-decoration: none;
+          overflow: hidden;
+          color: $light-blue;
+          font-size: 1.2rem;
+          text-align: center;
+          text-shadow: $dark-blue 2px 2px 2px;
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $light-blue;
+            transition: width 300ms ease, left 300ms ease, right 300ms ease;
+          }
+          &:before {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:after {
+            left: 50%;
+            right: 50%;
+            transition-delay: 100ms;
+          }
+          &:hover:before, &:hover:after {
+            width: 100%;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

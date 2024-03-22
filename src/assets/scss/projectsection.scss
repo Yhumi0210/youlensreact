@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'junkga-regular';
+  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-bold';
+  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
+}
+@font-face {
+  font-family: 'junkga-thin';
+  src: url('../../fonts/Jungka-Book.otf') format('opentype')
+}
+
+// colors
+
+$light-blue: #C7D5D8;
+$dark-blue: #3F4851;
+$white: #FFFFFF;
+
+// fonts
+
+$bold: 'junkga-bold', sans-serif;
+$regular: 'junkga-regular', sans-serif;
+$thin: 'junkga-thin', sans-serif;
+
+// font weight
+
+$weight: 500;
+
+// font size
+
+
+
+// font style
+
+$style: normal;
+
+//.gallery__item--large {
+//  width: 100%; /* Ou la largeur désirée */
+//  height: 300px; /* Ou la hauteur désirée */
+//}
+//.gallery__item__image {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+
+.project {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  &__logo {
+    align-self: flex-end;
+    margin: 4.5rem 2rem 0 0;
+  }
+  &__container {
+    margin-top: -3rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    &__display {
+      font-size: 1.2rem;
+      color: $dark-blue;
+      text-transform: uppercase;
+      font-family: $regular;
+      letter-spacing: 0.08rem;
+      text-align: center;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $dark-blue;
+        transition: width 300ms ease, left 300ms ease, right 300ms ease;
+      }
+      &:before {
+        left: 50%;
+        right: 50%;
+        transition-delay: 100ms;
+      }
+      &:after {
+        left: 50%;
+        right: 50%;
+        transition-delay: 100ms;
+      }
+      &:hover:before, &:hover:after {
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: 4rem 8rem 6rem 8rem;
+    &__item {
+      color: $dark-blue;
+      &__media {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__title {
+          font-size: 1.2rem;
+          color: $dark-blue;
+          text-transform: uppercase;
+          font-family: $regular;
+          letter-spacing: 0.08rem;
+        }
+        &__type {
+          font-size: 1.2rem;
+          color: $dark-blue;
+          text-transform: uppercase;
+          font-family: $thin;
+          letter-spacing: 0.08rem;
+        }
+      }
+    }
+  }
+}
