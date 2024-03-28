@@ -50,8 +50,16 @@ $style: normal;
     font-family: $regular;
     letter-spacing: 0.3rem;
     font-size: 3.5rem;
-    text-align: center;
     text-shadow: $dark-blue 2px 2px 5px;
+    //&__logo {
+    //  width: 2.6rem;
+    //  height: 2.6rem;
+    //  margin-right: 0.4rem;
+    //  transition: transform 1s cubic-bezier(.16,1.08,.83,1);
+    //  &:hover {
+    //    transform: rotate(360deg);
+    //  }
+    //}
   }
   &__nav {
     width: 50%;

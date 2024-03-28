@@ -25,7 +25,6 @@
   font-family: "junkga-regular", sans-serif;
   letter-spacing: 0.3rem;
   font-size: 3.5rem;
-  text-align: center;
   text-shadow: #3F4851 2px 2px 5px;
 }
 .hero__nav {
@@ -132,10 +131,10 @@
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
 .project {
-  background-color: #FFFFFF;
+  background-color: #F0F0F3;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .project__logo {
   align-self: flex-end;
@@ -148,6 +147,7 @@
   flex-direction: row;
   align-self: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .project__container__display {
   font-size: 1.2rem;
@@ -157,65 +157,92 @@
   letter-spacing: 0.08rem;
   text-align: center;
   position: relative;
+  padding: 1rem 1rem 1rem 1rem;
 }
-.project__container__display:before, .project__container__display:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #3F4851;
-  transition: width 300ms ease, left 300ms ease, right 300ms ease;
+.project .open {
+  background-color: #F0F0F3; /* Couleur de fond */
+  border-radius: 10px;
+  filter: drop-shadow(-20px -20px 25px rgb(255, 255, 255)) drop-shadow(15px 15px 30px rgba(174, 174, 192, 0.4));
 }
-.project__container__display:before {
-  left: 50%;
-  right: 50%;
-  transition-delay: 100ms;
-}
-.project__container__display:after {
-  left: 50%;
-  right: 50%;
-  transition-delay: 100ms;
-}
-.project__container__display:hover:before, .project__container__display:hover:after {
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-.project__gallery {
+.project__thumbnail {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
   margin: 4rem 8rem 6rem 8rem;
 }
-.project__gallery__item {
+.project__thumbnail__item {
   color: #3F4851;
 }
-.project__gallery__item__media {
+.project__thumbnail__item__medias {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
-.project__gallery__item__info {
+.project__thumbnail__item__info {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.project__gallery__item__info__title {
-  font-size: 1.2rem;
+.project__thumbnail__item__info__title {
+  font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
   font-family: "junkga-regular", sans-serif;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.05rem;
 }
-.project__gallery__item__info__type {
-  font-size: 1.2rem;
+.project__thumbnail__item__info__type {
+  font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
   font-family: "junkga-thin", sans-serif;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.05rem;
+}
+.project__gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 7rem 4rem 7rem;
+}
+.project__gallery__media {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project__gallery__infos {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.project__gallery__infos__title {
+  font-size: 1rem;
+  color: #3F4851;
+  text-transform: uppercase;
+  font-family: "junkga-regular", sans-serif;
+  letter-spacing: 0.05rem;
+}
+.project__gallery__infos__type {
+  font-size: 1rem;
+  color: #3F4851;
+  text-transform: uppercase;
+  font-family: "junkga-thin", sans-serif;
+  letter-spacing: 0.05rem;
+}
+.project__gallery__infos__arrowleft {
+  width: 2rem;
+  height: 2rem;
+  color: #3F4851;
+}
+.project__gallery__infos__arrowright {
+  width: 2rem;
+  height: 2rem;
+  color: #3F4851;
 }
 
 @font-face {
