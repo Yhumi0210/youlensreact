@@ -1,39 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import logofonce from '../img/icons/logofonce.svg'
+import { medias } from './medias'
 
-const medias = [
-    {
-        url: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        type: 'photos',
-        title: 'Saint-Guilhem-le-Désert',
-        folder: '',
-    },
-    {
-        url: 'j2yMcPuysl4',
-        type: 'youtube',
-        title: 'Villa Provence - FPV Drone tour'
-    },
-    {
-        url: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        type: 'photos',
-        title: 'Truc'
-    },
-    {
-        url: 'bVGJzWWQKM4',
-        type: 'youtube',
-        title: 'Brasserie Le 80 - Méribel'
-    },
-    {
-        url: 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        type: 'photos',
-        title: 'Truc'
-    },
-    {
-        url: 'xC0wPoG2aEE',
-        type: 'youtube',
-        title: 'Domaine Mejan, Lodges  - FPV drone Tour'
-    }
-]
+// Importez toutes les images du dossier spécifié
+const imageContext = require.context('../img/photo', false, /\.(png|jpeg|jpg|svg)$/)
+
+// Convertit les images importées en un objet utilisable
+const images = imageContext.keys().reduce((images, path) => {
+    // Obtenez le nom du fichier sans le './'
+    const key = path.slice(2)
+    // Assignez chaque image à un objet où la clé est le nom du fichier
+    images[key] = imageContext(path).default
+    return images
+}, {})
 
 const ProjectSection = () => {
     const [isGalleryMode, setIsGalleryMode] = useState(false)
@@ -87,8 +66,10 @@ const ProjectSection = () => {
 
     const renderMedia = (media, index, mediaClass) => {
         switch (media.type) {
-            case 'photos':
-                return <img src={media.url} alt={`Media ${index}`} className={mediaClass} style={{ width: '100%' }} />
+            case 'photos': {
+                const imageSrc = images[media.fileName] // Accédez à l'image par son nom de fichier
+                return <img src={imageSrc} alt={`Media ${index}`} className={mediaClass} style={{ width: '100%' }} />
+            }
             case 'youtube':
                 return (
                     <iframe src={`https://www.youtube.com/embed/${media.url}`}

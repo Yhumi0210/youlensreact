@@ -20,7 +20,7 @@ function Footer() {
                 </section>
                 <section className="footer__info__social">
                     <div className="footer__info__social__link">
-                        <a className="footer__info__social__link__insta" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Instagram</a>
+                        <a className="footer__info__social__link__insta" href="https://www.instagram.com/youlens__?igsh=NXR6Y3F4ZjJyYjdi">Instagram</a>
                         {/*<a className="footer__info__social__link__behance" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Behance</a>*/}
                     </div>
                 </section>
