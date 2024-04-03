@@ -11,6 +11,7 @@
   src: url('../../fonts/Jungka-Book.otf') format('opentype')
 }
 
+
 // colors
 
 $light-blue: #C7D5D8;
@@ -46,6 +47,7 @@ $style: normal;
 //}
 
 .project {
+  margin-top: 1rem;
   //background-color: $white;
   background-color: #F0F0F3;
   display: flex;
@@ -64,20 +66,56 @@ $style: normal;
     justify-content: space-between;
     cursor: pointer;
       &__display {
+        width: 14rem;
         font-size: 1.2rem;
         color: $dark-blue;
         text-transform: uppercase;
-        font-family: $regular;
-        letter-spacing: 0.08rem;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
         text-align: center;
         position: relative;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 0 1rem;
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: $dark-blue;
+          transition: width 300ms ease, left 300ms ease, right 300ms ease;
+        }
+        &:before {
+          left: 50%;
+          right: 50%;
+          transition-delay: 100ms;
+        }
+        &:after {
+          left: 50%;
+          right: 50%;
+          transition-delay: 100ms;
+        }
+        &:hover:before, &:hover:after {
+          width: 100%;
+          left: 0;
+          right: 0;
+        }
       }
   }
   .open {
-    background-color: #F0F0F3; /* Couleur de fond */
-    border-radius: 10px;
-    filter: drop-shadow(-20px -20px 25px rgba(255, 255, 255, 1)) drop-shadow(15px 15px 30px rgba(174, 174, 192, 0.4));
+    &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $dark-blue;
+    }
+    //background-color: #F0F0F3; /* Couleur de fond */
+    //border-radius: 10px;
+    //filter: drop-shadow(-20px -20px 25px rgba(255, 255, 255, 1)) drop-shadow(15px 15px 30px rgba(174, 174, 192, 0.4));
   }
   &__thumbnail {
     display: grid;
@@ -98,18 +136,21 @@ $style: normal;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
         &__title {
           font-size: 1rem;
           color: $dark-blue;
           text-transform: uppercase;
-          font-family: $regular;
+          font-weight: 500;
           letter-spacing: 0.05rem;
         }
         &__type {
           font-size: 1rem;
           color: $dark-blue;
           text-transform: uppercase;
-          font-family: $thin;
+          font-weight: 300;
           letter-spacing: 0.05rem;
         }
       }
@@ -133,18 +174,21 @@ $style: normal;
       justify-content: space-between;
       align-items: center;
       margin-top: 2rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
       &__title {
         font-size: 1rem;
         color: $dark-blue;
         text-transform: uppercase;
-        font-family: $regular;
+        font-weight: 500;
         letter-spacing: 0.05rem;
       }
       &__type {
         font-size: 1rem;
         color: $dark-blue;
         text-transform: uppercase;
-        font-family: $thin;
+        font-weight: 300;
         letter-spacing: 0.05rem;
       }
       &__arrowleft {

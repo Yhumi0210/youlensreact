@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @font-face {
   font-family: "junkga-regular";
   src: url("../../fonts/Jungka-Regular.otf") format("opentype");
@@ -29,6 +31,7 @@
 }
 .hero__nav {
   width: 50%;
+  font-family: "junkga-regular", sans-serif;
 }
 .hero__nav__link {
   display: flex;
@@ -106,6 +109,10 @@
   margin: -10rem 8rem 0 8rem;
   color: #C7D5D8;
   font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   text-shadow: #3F4851 2px 2px 2px;
 }
 .main__arrow {
@@ -115,7 +122,16 @@
   height: 2rem;
   color: #C7D5D8;
   align-self: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  animation: floatArrow 600ms ease-in-out infinite;
+}
+@keyframes floatArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @font-face {
@@ -131,6 +147,7 @@
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
 .project {
+  margin-top: 1rem;
   background-color: #F0F0F3;
   display: flex;
   flex-direction: column;
@@ -150,19 +167,50 @@
   cursor: pointer;
 }
 .project__container__display {
+  width: 14rem;
   font-size: 1.2rem;
   color: #3F4851;
   text-transform: uppercase;
-  font-family: "junkga-regular", sans-serif;
-  letter-spacing: 0.08rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   text-align: center;
   position: relative;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
-.project .open {
-  background-color: #F0F0F3; /* Couleur de fond */
-  border-radius: 10px;
-  filter: drop-shadow(-20px -20px 25px rgb(255, 255, 255)) drop-shadow(15px 15px 30px rgba(174, 174, 192, 0.4));
+.project__container__display:before, .project__container__display:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3F4851;
+  transition: width 300ms ease, left 300ms ease, right 300ms ease;
+}
+.project__container__display:before {
+  left: 50%;
+  right: 50%;
+  transition-delay: 100ms;
+}
+.project__container__display:after {
+  left: 50%;
+  right: 50%;
+  transition-delay: 100ms;
+}
+.project__container__display:hover:before, .project__container__display:hover:after {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.project .open:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3F4851;
 }
 .project__thumbnail {
   display: grid;
@@ -185,19 +233,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .project__thumbnail__item__info__title {
   font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
-  font-family: "junkga-regular", sans-serif;
+  font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__thumbnail__item__info__type {
   font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
-  font-family: "junkga-thin", sans-serif;
+  font-weight: 300;
   letter-spacing: 0.05rem;
 }
 .project__gallery {
@@ -219,19 +270,22 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .project__gallery__infos__title {
   font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
-  font-family: "junkga-regular", sans-serif;
+  font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__gallery__infos__type {
   font-size: 1rem;
   color: #3F4851;
   text-transform: uppercase;
-  font-family: "junkga-thin", sans-serif;
+  font-weight: 300;
   letter-spacing: 0.05rem;
 }
 .project__gallery__infos__arrowleft {
@@ -258,6 +312,10 @@
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
 .selfportrait {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   background-color: #C7D5D8;
   display: flex;
   flex-direction: column;
@@ -377,8 +435,17 @@
   align-items: center;
 }
 .footer__info__contact__number__phone {
-  font-family: "junkga-thin", sans-serif;
+  width: 32rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.5rem;
+}
+.footer__info__contact__number__phone a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #C7D5D8;
 }
 .footer__info__contact__number__line {
   display: block;
@@ -387,8 +454,18 @@
   width: 2px;
 }
 .footer__info__contact__number__mail {
-  font-family: "junkga-thin", sans-serif;
+  width: 32rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.5rem;
+  text-align: end;
+}
+.footer__info__contact__number__mail a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #C7D5D8;
 }
 .footer__info__social {
   margin-bottom: 4rem;
@@ -399,7 +476,10 @@
   justify-content: space-between;
 }
 .footer__info__social__link__insta {
-  font-family: "junkga-thin", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
@@ -419,7 +499,10 @@
   width: 100%;
 }
 .footer__info__social__link__behance {
-  font-family: "junkga-thin", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1.5rem;
   text-decoration: none;
   color: #C7D5D8;
@@ -439,9 +522,66 @@
   width: 100%;
 }
 .footer__info__rights {
-  font-family: "junkga-thin", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   text-align: center;
   font-size: 1rem;
+}
+.footer__info__rights a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #C7D5D8;
+}
+
+.background {
+  margin-top: -8rem;
+  width: 100%;
+  height: 30rem;
+  position: relative; /* Ajouté pour le positionnement du pseudo-élément */
+}
+.background__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #C7D5D8 100%);
+}
+
+.mentions_legales {
+  display: flex;
+  flex-direction: column;
+  background-color: #C7D5D8;
+  color: #3F4851;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0 8rem 4rem 8rem;
+}
+.mentions_legales__bloc {
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  width: 60%;
+}
+.mentions_legales__bloc__text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 @font-face {
@@ -456,8 +596,11 @@
   font-family: "junkga-thin";
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
+@font-face {
+  font-family: "josefin";
+  src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+}
 * {
-  font-family: "junkga-regular", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -469,6 +612,13 @@
 }
 .logo:hover {
   transform: rotate(360deg);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=main.css.map */

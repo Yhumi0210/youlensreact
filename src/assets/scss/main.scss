@@ -3,6 +3,9 @@
 @import 'projectsection.scss';
 @import 'selfportrait.scss';
 @import 'footer.scss';
+@import 'legalMentions.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 @font-face {
   font-family: 'junkga-regular';
@@ -16,6 +19,11 @@
   font-family: 'junkga-thin';
   src: url('../../fonts/Jungka-Book.otf') format('opentype')
 }
+@font-face {
+  font-family: 'josefin';
+  src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+}
+
 
 // colors
 
@@ -28,6 +36,7 @@ $white: #FFFFFF;
 $bold: 'junkga-bold', sans-serif;
 $regular: 'junkga-regular', sans-serif;
 $thin: 'junkga-thin', sans-serif;
+$josefin : 'josefin', sans-serif;
 
 // font weight
 
@@ -42,7 +51,7 @@ $weight: 500;
 $style: normal;
 
 * {
-  font-family: $regular;
+  //font-family: $regular;
   // font-weight: $weight;
   margin: 0;
   padding: 0;
@@ -55,4 +64,11 @@ $style: normal;
   &:hover {
     transform: rotate(360deg);
   }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

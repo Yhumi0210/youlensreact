@@ -16,11 +16,11 @@ function SelfPortraitArticle() {
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__me">
-                    Je m’appelle Guillaume Court, Ancien lighter
-                    dans le cinéma d’animation 3D, je me suis re converti
+                    Je m’appelle Guillaume Court,<br /> Ancien lighter
+                    dans le cinéma d’animation 3D, je me suis reconverti
                     dans la réalisation vidéo pour retrouver
                     le contact humain et le travail en extérieur
-                    qui me manquaient dans mon quotidien.
+                    qui me manquaient dans mon quotidien.<br />
                     <br />
                     Mes compétences acquises au sein des studios
                     de long métrages d’animation m’ont permis
@@ -39,7 +39,7 @@ function SelfPortraitArticle() {
                 </div>
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconDrone} alt="Services de drone" />
-                    <p className="selfportrait__service__detail__text">Drône</p>
+                    <p className="selfportrait__service__detail__text">Drone</p>
                 </div>
                 <div className="selfportrait__service__detail">
                     <img className="selfportrait__service__detail__icon" src={iconPhoto} alt="Services de photographie" />
@@ -60,7 +60,7 @@ function SelfPortraitArticle() {
                     la post production. Je peux travailler partout dans le monde.<br />
                     <br />
                     Les projets vont de l’immobilier, du mariage, à la vidéo corporate
-                    d’entreprise en passant par la couverture d&aposévénements exceptionnels
+                    d’entreprise en passant par la couverture d’événements exceptionnels
                     ou encore la mise en avant de lieux culturels ou historiques.  Il m’arrive
                     également de travailler dans un domaine plus technique dans des usines de
                     fabrications ou dans le BTP.<br />

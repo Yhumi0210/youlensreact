@@ -72,8 +72,17 @@ $style: normal;
         justify-content: space-between;
         align-items: center;
         &__phone {
-          font-family: $thin;
+          width: 32rem;
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
           font-size: 1.5rem;
+          a {
+            text-decoration: none;
+            list-style-type: none;
+            color: $light-blue;
+          }
         }
         &__line {
           display: block;
@@ -82,8 +91,18 @@ $style: normal;
           width: 2px;
         }
         &__mail {
-          font-family: $thin;
+          width: 32rem;
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
           font-size: 1.5rem;
+          text-align: end;
+          a {
+            text-decoration: none;
+            list-style-type: none;
+            color: $light-blue;
+          }
         }
       }
     }
@@ -94,7 +113,10 @@ $style: normal;
         flex-direction: row;
         justify-content: space-between;
         &__insta {
-          font-family: $thin;
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
           font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
@@ -114,7 +136,10 @@ $style: normal;
           }
         }
         &__behance {
-          font-family: $thin;
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
           font-size: 1.5rem;
           text-decoration: none;
           color: $light-blue;
@@ -136,9 +161,17 @@ $style: normal;
       }
     }
     &__rights {
-      font-family: $thin;
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
       text-align: center;
       font-size: 1rem;
+      a {
+        text-decoration: none;
+        list-style-type: none;
+        color: $light-blue;
+      }
     }
   }
 }

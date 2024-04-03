@@ -22,7 +22,7 @@ export const medias = [
     {
         url: 'j2yMcPuysl4',
         type: 'youtube',
-        title: 'Villa Provence - FPV Drone tour'
+        title: 'Villa Provence'
     },
     {
         url: 'bVGJzWWQKM4',
@@ -32,6 +32,6 @@ export const medias = [
     {
         url: 'xC0wPoG2aEE',
         type: 'youtube',
-        title: 'Domaine Mejan, Lodges  - FPV drone Tour'
+        title: 'Domaine Mejan'
     }
 ]

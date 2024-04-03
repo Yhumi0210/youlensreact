@@ -1,21 +1,21 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom' // Importez Routes au lieu de Switch
 import Header from './jsx/Header'
-import MainSection from './jsx/MainSection'
-import ProjectSection from './jsx/ProjectSection'
-import SelfPortraitArticle from './jsx/SelfPortraitArticle'
 import Footer from './jsx/Footer'
-// Importez les autres composants ici
+import HomePage from './HomePage' // Ajustez le chemin si nécessaire
+import LegalMentions from './jsx/LegalMentions' // Ajustez le chemin si nécessaire
 
 function App() {
-  return (
-      <div>
-        <Header />
-        <MainSection />
-        <ProjectSection />
-        <SelfPortraitArticle />
-        <Footer />
-      </div>
-  )
+    return (
+        <div>
+            <Header />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/mentions-legales" element={<LegalMentions />} />
+            </Routes>
+            <Footer />
+        </div>
+    )
 }
 
 export default App
