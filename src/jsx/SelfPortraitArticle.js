@@ -1,17 +1,31 @@
-import React from 'react'
-import logofonce from '../img/icons/logofonce.svg'
-import iconCamera from '../img/icons/iconcamera.svg'
-import iconPhoto from '../img/icons/iconphoto.svg'
-import iconDrone from '../img/icons/icondrone.svg'
-import iconMontage from '../img/icons/iconmontage.svg'
+import React, {useContext} from 'react'
+import logofonce from '../img/icons/logoblanc.svg'
+import iconCamera from '../img/icons/cameraicon.svg'
+import iconPhoto from '../img/icons/photoicon.svg'
+import iconDrone from '../img/icons/droneicon.svg'
+import iconMontage from '../img/icons/montageicon.svg'
 import portraitGuillaume from '../img/photo/portraitguillaume.webp'
+import ScrollbarContext from './ScrollbarContext'
+
 
 function SelfPortraitArticle() {
+
+    const { getScrollbar } = useContext(ScrollbarContext)
+
+    const scrollToTop = () => {
+        const scrollbar = getScrollbar()
+        if (scrollbar) {
+            scrollbar.scrollTo(0, 0, 500)
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
+
     return (
         <article id="selfportrait-article" className="selfportrait">
-            <a className="selfportrait__container" href="#header">
+            <div className="selfportrait__container" onClick={scrollToTop}>
                 <img className="logo" src={logofonce} alt="logo Youlens" />
-            </a>
+            </div>
             <h2 className="selfportrait__title">Qui suis-je ?</h2>
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
@@ -50,7 +64,7 @@ function SelfPortraitArticle() {
                     <p className="selfportrait__service__detail__text">Post production</p>
                 </div>
             </section>
-            <h4 className="selfportrait__title">Comment ça se passe ?</h4>
+            <h4 className="selfportrait__title">Le processus</h4>
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__how">

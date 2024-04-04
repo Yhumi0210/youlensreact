@@ -23,15 +23,19 @@
 .hero__brand {
   display: flex;
   text-decoration: none;
-  color: #C7D5D8;
-  font-family: "junkga-regular", sans-serif;
+  color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   letter-spacing: 0.3rem;
   font-size: 3.5rem;
-  text-shadow: #3F4851 2px 2px 5px;
+  text-shadow: #153048 2px 2px 5px;
 }
 .hero__nav {
   width: 50%;
-  font-family: "junkga-regular", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .hero__nav__link {
   display: flex;
@@ -50,34 +54,37 @@
   position: relative;
   text-decoration: none;
   overflow: hidden;
-  color: #C7D5D8;
+  color: #FFFFFF;
   font-size: 1.2rem;
   text-align: center;
-  text-shadow: #3F4851 2px 2px 2px;
+  text-shadow: #153048 2px 2px 2px;
 }
 .hero__nav__link__page__a:before, .hero__nav__link__page__a:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.3rem;
   width: 0;
   height: 2px;
-  background-color: #C7D5D8;
+  background-color: #D9E0E6;
   transition: width 300ms ease, left 300ms ease, right 300ms ease;
 }
 .hero__nav__link__page__a:before {
   left: 50%;
   right: 50%;
   transition-delay: 100ms;
+  box-shadow: #153048 2px 2px 5px;
 }
 .hero__nav__link__page__a:after {
   left: 50%;
   right: 50%;
   transition-delay: 100ms;
+  box-shadow: #153048 2px 2px 5px;
 }
 .hero__nav__link__page__a:hover:before, .hero__nav__link__page__a:hover:after {
   width: 100%;
   left: 0;
   right: 0;
+  box-shadow: #153048 2px 2px 5px;
 }
 
 @font-face {
@@ -94,7 +101,7 @@
 }
 .main {
   height: 100%;
-  margin-top: -16rem;
+  margin-top: -14rem;
   display: flex;
   flex-direction: column;
 }
@@ -106,24 +113,20 @@
 .main__h1 {
   position: relative;
   z-index: 1;
-  margin: -10rem 8rem 0 8rem;
-  color: #C7D5D8;
-  font-size: 2.5rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  text-shadow: #3F4851 2px 2px 2px;
+  margin: -23rem 8rem 0 8rem;
+  color: #FFFFFF;
+  text-shadow: #153048 2px 2px 2px;
 }
 .main__arrow {
   position: relative;
   z-index: 1;
   width: 2rem;
   height: 2rem;
-  color: #C7D5D8;
+  color: #FFFFFF;
   align-self: center;
   margin-top: 2rem;
   animation: floatArrow 600ms ease-in-out infinite;
+  cursor: pointer;
 }
 @keyframes floatArrow {
   0%, 100% {
@@ -147,11 +150,14 @@
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
 .project {
-  margin-top: 1rem;
-  background-color: #F0F0F3;
+  margin-top: 0;
+  background-color: #D9E0E6;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .project__logo {
   align-self: flex-end;
@@ -169,12 +175,8 @@
 .project__container__display {
   width: 14rem;
   font-size: 1.2rem;
-  color: #3F4851;
+  color: #153048;
   text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
   text-align: center;
   position: relative;
   padding: 1rem 1rem 0 1rem;
@@ -182,10 +184,10 @@
 .project__container__display:before, .project__container__display:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.2rem;
   width: 0;
   height: 2px;
-  background-color: #3F4851;
+  background-color: #153048;
   transition: width 300ms ease, left 300ms ease, right 300ms ease;
 }
 .project__container__display:before {
@@ -210,7 +212,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #3F4851;
+  background-color: #153048;
 }
 .project__thumbnail {
   display: grid;
@@ -220,7 +222,7 @@
   margin: 4rem 8rem 6rem 8rem;
 }
 .project__thumbnail__item {
-  color: #3F4851;
+  color: #153048;
 }
 .project__thumbnail__item__medias {
   width: 100%;
@@ -233,20 +235,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 .project__thumbnail__item__info__title {
   font-size: 1rem;
-  color: #3F4851;
+  color: #153048;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__thumbnail__item__info__type {
   font-size: 1rem;
-  color: #3F4851;
+  color: #153048;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -270,20 +269,17 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 .project__gallery__infos__title {
   font-size: 1rem;
-  color: #3F4851;
+  color: #153048;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__gallery__infos__type {
   font-size: 1rem;
-  color: #3F4851;
+  color: #153048;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -291,12 +287,12 @@
 .project__gallery__infos__arrowleft {
   width: 2rem;
   height: 2rem;
-  color: #3F4851;
+  color: #153048;
 }
 .project__gallery__infos__arrowright {
   width: 2rem;
   height: 2rem;
-  color: #3F4851;
+  color: #153048;
 }
 
 @font-face {
@@ -314,12 +310,11 @@
 .selfportrait {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  background-color: #C7D5D8;
+  font-weight: 300;
+  background-color: #153048;
   display: flex;
   flex-direction: column;
-  color: #3F4851;
+  color: #FFFFFF;
   padding: 2rem 8rem 2rem 8rem;
 }
 .selfportrait__container {
@@ -327,12 +322,11 @@
   margin: 0 -6rem 0 0;
 }
 .selfportrait__title {
-  font-size: 2.5rem;
   margin-top: 1rem;
 }
 .selfportrait__line {
   display: block;
-  background-color: #3F4851;
+  background-color: #D9E0E6;
   height: 2px;
   width: 100%;
   margin: 1rem 0 1rem 0;
@@ -399,8 +393,8 @@
   src: url("../../fonts/Jungka-Book.otf") format("opentype");
 }
 .footer {
-  background-color: #3F4851;
-  color: #C7D5D8;
+  background-color: #D9E0E6;
+  color: #153048;
   display: flex;
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
@@ -408,14 +402,12 @@
 .footer__container {
   align-self: flex-end;
   margin: 0 -6rem 2rem 0;
-}
-.footer__info__title {
-  font-size: 2.5rem;
+  cursor: pointer;
 }
 .footer__info__title:after {
   content: "";
   display: block;
-  background-color: #C7D5D8;
+  background-color: #153048;
   width: 100%;
   height: 2px;
   margin: 0.5rem 0 0.8rem 0;
@@ -423,7 +415,7 @@
 .footer__info__contact:after {
   content: "";
   display: block;
-  background-color: #C7D5D8;
+  background-color: #153048;
   width: 100%;
   height: 2px;
   margin: 0.7rem 0 0.8rem 0;
@@ -445,11 +437,11 @@
 .footer__info__contact__number__phone a {
   text-decoration: none;
   list-style-type: none;
-  color: #C7D5D8;
+  color: #153048;
 }
 .footer__info__contact__number__line {
   display: block;
-  background-color: #C7D5D8;
+  background-color: #153048;
   height: 1.5rem;
   width: 2px;
 }
@@ -457,15 +449,15 @@
   width: 32rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
   font-size: 1.5rem;
   text-align: end;
 }
 .footer__info__contact__number__mail a {
   text-decoration: none;
   list-style-type: none;
-  color: #C7D5D8;
+  color: #153048;
 }
 .footer__info__social {
   margin-bottom: 4rem;
@@ -478,11 +470,11 @@
 .footer__info__social__link__insta {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #C7D5D8;
+  color: #153048;
   position: relative;
 }
 .footer__info__social__link__insta:before {
@@ -492,7 +484,7 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #C7D5D8;
+  background-color: #153048;
   transition: width 300ms ease-in-out;
 }
 .footer__info__social__link__insta:hover:before {
@@ -501,11 +493,11 @@
 .footer__info__social__link__behance {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #C7D5D8;
+  color: #153048;
   position: relative;
 }
 .footer__info__social__link__behance:before {
@@ -515,7 +507,7 @@
   right: 0;
   width: 0%;
   height: 2px;
-  background-color: #C7D5D8;
+  background-color: #153048;
   transition: width 300ms ease-in-out;
 }
 .footer__info__social__link__behance:hover:before {
@@ -524,15 +516,15 @@
 .footer__info__rights {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
   text-align: center;
   font-size: 1rem;
 }
 .footer__info__rights a {
   text-decoration: none;
   list-style-type: none;
-  color: #C7D5D8;
+  color: #153048;
 }
 
 .background {
@@ -554,18 +546,14 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #C7D5D8 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #D9E0E6 100%);
 }
 
 .mentions_legales {
   display: flex;
   flex-direction: column;
-  background-color: #C7D5D8;
-  color: #3F4851;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+  background-color: #D9E0E6;
+  color: #153048;
   padding: 0 8rem 4rem 8rem;
 }
 .mentions_legales__bloc {
@@ -600,6 +588,10 @@
   font-family: "josefin";
   src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 }
+@font-face {
+  font-family: "Didot";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -608,17 +600,27 @@
 .logo {
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
   transition: transform 1s cubic-bezier(0.16, 1.08, 0.83, 1);
 }
 .logo:hover {
   transform: rotate(360deg);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Josefin Sans", sans-serif;
+h1 {
+  font-family: "Didot", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5 {
+  font-family: "Didot", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

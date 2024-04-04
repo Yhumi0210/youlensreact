@@ -1,9 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom' // Importez Link depuis react-router-dom
-// Assurez-vous d'importer logolight de l'endroit approprié
-import logolight from '../img/icons/logoclair.svg' // Modifiez avec le chemin d'import correct
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import ScrollbarContext from './ScrollbarContext'
+import logolight from '../img/icons/logoblanc.svg'
 
 function Header() {
+    const { getScrollbar } = useContext(ScrollbarContext) // Utilisez le contexte pour accéder à getScrollbar
+
+    const handleScrollToSection = (sectionId) => {
+        const scrollbar = getScrollbar()
+        const section = document.getElementById(sectionId)
+
+        if (scrollbar && section) {
+            // Utilisez l'instance de smooth-scrollbar pour déclencher le défilement
+            scrollbar.scrollIntoView(section, { offsetTop: -scrollbar.offset.y })
+        } else {
+            // Fallback au défilement natif si smooth-scrollbar n'est pas disponible
+            section.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <header id="header" className="hero">
             <Link to="/" className="hero__brand">
@@ -11,9 +26,15 @@ function Header() {
             </Link>
             <nav className="hero__nav">
                 <ul className="hero__nav__link">
-                    <li className="hero__nav__link__page"><a className="hero__nav__link__page__a" href="#project-section">projets</a></li>
-                    <li className="hero__nav__link__page"><a className="hero__nav__link__page__a" href="#selfportrait-article">à propos</a></li>
-                    <li className="hero__nav__link__page"><a className="hero__nav__link__page__a" href="#contact-section">contact</a></li>
+                    <li className="hero__nav__link__page" onClick={() => handleScrollToSection('project-section')}>
+                        <a className="hero__nav__link__page__a">projets</a>
+                    </li>
+                    <li className="hero__nav__link__page" onClick={() => handleScrollToSection('selfportrait-article')}>
+                        <a className="hero__nav__link__page__a">à propos</a>
+                    </li>
+                    <li className="hero__nav__link__page" onClick={() => handleScrollToSection('contact-section')}>
+                        <a className="hero__nav__link__page__a">contact</a>
+                    </li>
                 </ul>
             </nav>
             <img className="logo" src={logolight} alt="logo Youlens" />

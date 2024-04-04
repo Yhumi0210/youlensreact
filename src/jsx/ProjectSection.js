@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import logofonce from '../img/icons/logofonce.svg'
+import React, {useState, useEffect, useContext} from 'react'
+import logofonce from '../img/icons/logobleufonce.svg'
 import { medias } from './medias'
+import ScrollbarContext from './ScrollbarContext'
 
 // Importez toutes les images du dossier spécifié
 const imageContext = require.context('../img/photo', false, /\.(png|jpeg|jpg|svg)$/)
@@ -84,11 +85,22 @@ const ProjectSection = () => {
         }
     }
 
+    const { getScrollbar } = useContext(ScrollbarContext)
+
+    const scrollToTop = () => {
+        const scrollbar = getScrollbar()
+        if (scrollbar) {
+            scrollbar.scrollTo(0, 0, 500)
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
+
     return (
         <section id='project-section' className='project'>
-            <a className='project__logo' href='#header'>
-                <img className='logo' src={logofonce} alt='logo Youlens' />
-            </a>
+            <div className="project__logo" onClick={scrollToTop}>
+                <img className="logo" src={logofonce} alt="logo Youlens" />
+            </div>
             <div className='project__container'>
                 <p id='max' className={galleryClass} onClick={handleGalleryMode}>grand format</p>
                 <p id='min' className={thumbnailClass} onClick={handleThumbnailMode}>miniatures</p>

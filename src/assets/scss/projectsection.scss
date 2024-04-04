@@ -14,8 +14,8 @@
 
 // colors
 
-$light-blue: #C7D5D8;
-$dark-blue: #3F4851;
+$light-blue: #D9E0E6;
+$dark-blue: #153048;
 $white: #FFFFFF;
 
 // fonts
@@ -47,12 +47,15 @@ $style: normal;
 //}
 
 .project {
-  margin-top: 1rem;
+  margin-top: 0;
   //background-color: $white;
-  background-color: #F0F0F3;
+  background-color: $light-blue;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   &__logo {
     align-self: flex-end;
     margin: 4.5rem 2rem 0 0;
@@ -70,17 +73,17 @@ $style: normal;
         font-size: 1.2rem;
         color: $dark-blue;
         text-transform: uppercase;
-        font-family: "Josefin Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
+        //font-family: "Josefin Sans", sans-serif;
+        //font-optical-sizing: auto;
+        //font-weight: 500;
+        //font-style: normal;
         text-align: center;
         position: relative;
         padding: 1rem 1rem 0 1rem;
         &:before, &:after {
           content: '';
           position: absolute;
-          bottom: 0;
+          bottom: -0.2rem;
           width: 0;
           height: 2px;
           background-color: $dark-blue;
@@ -136,9 +139,6 @@ $style: normal;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-family: "Josefin Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
         &__title {
           font-size: 1rem;
           color: $dark-blue;
@@ -174,9 +174,7 @@ $style: normal;
       justify-content: space-between;
       align-items: center;
       margin-top: 2rem;
-      font-family: "Josefin Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
+
       &__title {
         font-size: 1rem;
         color: $dark-blue;

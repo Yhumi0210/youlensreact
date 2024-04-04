@@ -1,9 +1,9 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom' // Importez Routes au lieu de Switch
+import { Route, Routes } from 'react-router-dom'
 import Header from './jsx/Header'
 import Footer from './jsx/Footer'
-import HomePage from './HomePage' // Ajustez le chemin si nécessaire
-import LegalMentions from './jsx/LegalMentions' // Ajustez le chemin si nécessaire
+import HomePage from './HomePage'
+import LegalMentions from './jsx/LegalMentions'
 
 function App() {
     return (

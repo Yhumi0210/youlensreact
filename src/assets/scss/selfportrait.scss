@@ -11,10 +11,12 @@
   src: url('../../fonts/Jungka-Book.otf') format('opentype')
 }
 
+
 // colors
 
-$light-blue: #C7D5D8;
-$dark-blue: #3F4851;
+
+$light-blue: #D9E0E6;
+$dark-blue: #153048;
 $white: #FFFFFF;
 
 // fonts
@@ -38,24 +40,22 @@ $style: normal;
 .selfportrait {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  background-color: $light-blue;
+  font-weight: 300;
+  background-color: $dark-blue;
   display: flex;
   flex-direction: column;
-  color: $dark-blue;
+  color: $white;
   padding: 2rem 8rem 2rem 8rem;
   &__container {
     align-self: flex-end;
     margin: 0 -6rem 0 0;
   }
   &__title {
-    font-size: 2.5rem;
     margin-top: 1rem;
   }
   &__line {
     display: block;
-    background-color: $dark-blue;
+    background-color: $light-blue;
     height: 2px;
     width: 100%;
     margin: 1rem 0 1rem 0;

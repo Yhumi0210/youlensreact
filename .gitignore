@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Videos
+/src/img/video/Youlens_showreel_2023-2024.mp4

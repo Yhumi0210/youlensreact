@@ -1,20 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import logoclair from '../img/icons/logoclair.svg'
+import React, { useContext } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
+import ScrollbarContext from './ScrollbarContext'
+import logoclair from '../img/icons/logobleufonce.svg'
 
 function Footer() {
+
+    const { getScrollbar } = useContext(ScrollbarContext)
+
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth', // Permet un effet de défilement doux
-        })
+        const scrollbar = getScrollbar()
+        if (scrollbar) {
+            scrollbar.scrollTo(0, 0, 500)
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
     }
 
     return (
         <footer id="contact-section" className="footer">
-            <a className="footer__container" href="#header">
+            <div className="footer__container" onClick={scrollToTop}>
                 <img className="logo" src={logoclair} alt="logo Youlens" />
-            </a>
+            </div>
             <section className="footer__info">
                 <h5 className="footer__info__title">
                     Me contacter
@@ -28,13 +34,12 @@ function Footer() {
                 </section>
                 <section className="footer__info__social">
                     <div className="footer__info__social__link">
-                        <a className="footer__info__social__link__insta" href="https://www.instagram.com/youlens__?igsh=NXR6Y3F4ZjJyYjdi"  target="_blank" rel="noreferrer noopener">Instagram</a>
+                        <a className="footer__info__social__link__insta" href="https://www.instagram.com/youlens__?igsh=NXR6Y3F4ZjJyYjdi" target="_blank" rel="noreferrer noopener">Instagram</a>
                         {/*<a className="footer__info__social__link__behance" href="https://www.instagram.com/guillaumecourt_?igsh=bWh6NzR4ZjFvdjI2">Behance</a>*/}
                     </div>
                 </section>
                 <p className="footer__info__rights">
-                    {/* Utilisez onClick avec Link pour déclencher le défilement vers le haut */}
-                    <Link to="/mentions-legales" onClick={scrollToTop}>Mentions Légales</Link>
+                    <RouterLink to="/mentions-legales" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Mentions Légales</RouterLink>
                     <br />© 2024 Youlens. All Rights Reserved.
                 </p>
             </section>

@@ -23,12 +23,23 @@
   font-family: 'josefin';
   src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 }
+@font-face {
+  font-family: 'Didot';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype')
+}
+
+
 
 
 // colors
-
-$light-blue: #C7D5D8;
-$dark-blue: #3F4851;
+// couleurs de base
+//$light-blue: #C7D5D8;
+//$dark-blue: #3F4851;
+//$light-blue: #fafff2;
+//$dark-blue: #161915;
+// garder ces couleurs
+$light-blue: #D9E0E6;
+$dark-blue: #153048;
 $white: #FFFFFF;
 
 // fonts
@@ -41,10 +52,6 @@ $josefin : 'josefin', sans-serif;
 // font weight
 
 $weight: 500;
-
-// font size
-
-
 
 // font style
 
@@ -60,15 +67,25 @@ $style: normal;
 .logo {
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
   transition: transform 1s cubic-bezier(.16,1.08,.83,1);
   &:hover {
     transform: rotate(360deg);
   }
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Josefin Sans", sans-serif;
+h1 {
+  font-family: 'Didot', serif;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Didot', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
