@@ -231,10 +231,12 @@
   justify-content: center;
   gap: 2px;
   width: 100%;
+  max-height: 20rem;
   aspect-ratio: 16/9;
+  overflow: hidden;
 }
 .project__thumbnail__item .container .project__thumbnail__item__medias {
-  width: 100%;
+  max-width: 30%;
   height: auto;
   object-fit: cover;
 }
