@@ -3,14 +3,14 @@ export const projects = [
         id: 1,
         title: 'Saint-Guilhem-Le-Désert',
         type: 'photos',
-        images: ['SaintGuilhem01.jpg', 'SaintGuilhem02.jpg', 'SaintGuilhem03.jpg', 'SaintGuilhem04.jpg', 'SaintGuilhem05.jpg', 'SaintGuilhem06.jpg',
-             'SaintGuilhem07.jpg', 'SaintGuilhem08.jpg', 'SaintGuilhem09.jpg', 'SaintGuilhem10.jpg', 'SaintGuilhem11.jpg', 'SaintGuilhem12.jpg', 'SaintGuilhem13.jpg', 'SaintGuilhem14.jpg'],
+        images: ['SaintGuilhem01.webp', 'SaintGuilhem02.webp', 'SaintGuilhem03.webp', 'SaintGuilhem04.webp', 'SaintGuilhem05.webp', 'SaintGuilhem06.webp',
+             'SaintGuilhem07.webp', 'SaintGuilhem08.webp', 'SaintGuilhem09.webp', 'SaintGuilhem10.webp', 'SaintGuilhem11.webp', 'SaintGuilhem12.webp', 'SaintGuilhem13.webp', 'SaintGuilhem14.webp'],
     },
     {
         id: 2,
         title: 'Frozen-Lake Savoie',
         type: 'photos',
-        images: ['FrozenLakeSavoie01.jpg', 'FrozenLakeSavoie02.jpg', 'FrozenLakeSavoie03.jpg', 'FrozenLakeSavoie04.jpg', 'FrozenLakeSavoie05.jpg'],
+        images: ['FrozenLakeSavoie01.webp', 'FrozenLakeSavoie02.webp', 'FrozenLakeSavoie03.webp', 'FrozenLakeSavoie04.webp', 'FrozenLakeSavoie05.webp'],
     },
     {
         id: 3,

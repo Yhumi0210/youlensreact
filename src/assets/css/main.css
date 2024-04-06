@@ -174,7 +174,7 @@
 .project__container__display {
   width: 14rem;
   font-size: 1.2rem;
-  color: #0C1217;
+  color: rgba(12, 18, 23, 0.4980392157);
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -186,7 +186,7 @@
   bottom: -0.2rem;
   width: 0;
   height: 2px;
-  background-color: #0C1217;
+  background-color: rgba(12, 18, 23, 0.4980392157);
   transition: width 300ms ease, left 300ms ease, right 300ms ease;
 }
 .project__container__display:before {
@@ -203,6 +203,9 @@
   width: 100%;
   left: 0;
   right: 0;
+}
+.project .open {
+  color: #0C1217;
 }
 .project .open:after {
   content: "";
@@ -226,10 +229,7 @@
 .project__thumbnail__item .container {
   display: flex;
   justify-content: center;
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-.project__thumbnail__item .container .iframe {
+  gap: 2px;
   width: 100%;
   aspect-ratio: 16/9;
 }
@@ -237,6 +237,10 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.project__thumbnail__item .container .iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 .project__thumbnail__item__info {
   width: 100%;
@@ -276,8 +280,8 @@
 .project__gallery .container .project__gallery__media {
   width: 90%;
   height: auto;
-  max-height: 34rem;
-  object-fit: cover;
+  max-height: 48rem;
+  object-fit: contain;
 }
 .project__gallery__infos {
   width: 50%;
@@ -613,6 +617,11 @@
   font-family: "Didot-Regular";
   src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

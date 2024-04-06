@@ -45,6 +45,11 @@ $weight: 500;
 
 $style: normal;
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 * {
   //font-family: $regular;
   // font-weight: $weight;

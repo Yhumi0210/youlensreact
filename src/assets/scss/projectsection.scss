@@ -73,7 +73,7 @@ $style: normal;
       &__display {
         width: 14rem;
         font-size: 1.2rem;
-        color: $dark-blue;
+        color: #0C12177F;
         text-transform: uppercase;
         //font-family: "Josefin Sans", sans-serif;
         //font-optical-sizing: auto;
@@ -88,7 +88,7 @@ $style: normal;
           bottom: -0.2rem;
           width: 0;
           height: 2px;
-          background-color: $dark-blue;
+          background-color: #0C12177F;
           transition: width 300ms ease, left 300ms ease, right 300ms ease;
         }
         &:before {
@@ -109,6 +109,7 @@ $style: normal;
       }
   }
   .open {
+    color: $dark-blue;
     &:after {
     content: '';
     position: absolute;
@@ -133,16 +134,17 @@ $style: normal;
       .container {
         display: flex;
         justify-content: center;
+        gap: 2px;
         width: 100%;
         aspect-ratio: 16 / 9;
-        .iframe {
-          width: 100%;
-          aspect-ratio: 16 / 9;
-        }
         .project__thumbnail__item__medias {
           width: 100%;
           height: auto;
           object-fit: cover;
+        }
+        .iframe {
+          width: 100%;
+          aspect-ratio: 16 / 9;
         }
       }
       &__info {
@@ -183,8 +185,8 @@ $style: normal;
       .project__gallery__media {
         width: 90%;
         height: auto;
-        max-height: 34rem;
-        object-fit: cover;
+        max-height: 48rem;
+        object-fit: contain;
       }
     }
 

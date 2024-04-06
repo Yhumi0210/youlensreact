@@ -39,7 +39,7 @@ function Footer() {
                     </div>
                 </section>
                 <p className="footer__info__rights">
-                    <RouterLink to="/mentions-legales" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Mentions Légales</RouterLink>
+                    <RouterLink to="/mentions-legales" onClick={scrollToTop}>Mentions Légales</RouterLink>
                     <br />© 2024 Youlens. All Rights Reserved.
                 </p>
             </section>

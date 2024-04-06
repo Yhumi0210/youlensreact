@@ -1,5 +1,5 @@
 import React from 'react'
-import bgimg from '../img/photo/SaintGuilhem14.jpg'
+import bgimg from '../img/photo/SaintGuilhem14.webp'
 
 function LegalMentions() {
     return (
