@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
-import logofonce from '../img/icons/logoblanc.svg'
+import logoclair from '../img/icons/logoclair.svg'
 import iconCamera from '../img/icons/cameraicon.svg'
 import iconPhoto from '../img/icons/photoicon.svg'
 import iconDrone from '../img/icons/droneicon.svg'
 import iconMontage from '../img/icons/montageicon.svg'
-import portraitGuillaume from '../img/photo/portraitguillaume.webp'
+import portraitGuillaume from '../img/photo/IMG_2127-Edit-Edit.webp'
 import ScrollbarContext from './ScrollbarContext'
 
 
@@ -24,23 +24,31 @@ function SelfPortraitArticle() {
     return (
         <article id="selfportrait-article" className="selfportrait">
             <div className="selfportrait__container" onClick={scrollToTop}>
-                <img className="logo" src={logofonce} alt="logo Youlens" />
+                <img className="logo" src={logoclair} alt="logo Youlens" />
             </div>
             <h2 className="selfportrait__title">Qui suis-je ?</h2>
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__me">
-                    Je m’appelle Guillaume Court,<br /> Ancien lighter
-                    dans le cinéma d’animation 3D, je me suis reconverti
-                    dans la réalisation vidéo pour retrouver
-                    le contact humain et le travail en extérieur
-                    qui me manquaient dans mon quotidien.<br />
+                    Je m’appelle Guillaume Court,<br />
+                    ma passion pour le monde des images
+                    a démarré<br /> il y a 6 ans lors de mes études
+                    de cinéma d’animation 3D.<br />
                     <br />
-                    Mes compétences acquises au sein des studios
-                    de long métrages d’animation m’ont permis
-                    de développer un œil très critique et exigeant
-                    quant à la qualité artistique d’une image.
+                    Cette voie m’a mené à Paris pendant deux années<br />
+                    durant lesquelles j’ai travaillé pour de grosses productions<br />
+                    de long métrages grand public en tant que lighter.<br />
                     <br />
+                    Le manque de contact humain et l’absence de travail en<br />
+                    extérieur m’ont mené à retourner dans le sud pour développer<br />
+                    un nouvel aspect de l’image qui est très vite devenu une<br />
+                    passion : la vidéo.<br />
+                    <br />
+                    Les compétences acquises auprès des studios d’animations<br />
+                    m’ont permis d’aiguiser mon oeil artistique et mes<br />
+                    capacités techniques de manière à me plonger toujours<br />
+                    plus vite dans le monde de la vidéo qui est vite<br />
+                    devenu mon travail et passe temps favori.<br />
                 </p>
                 <img className="selfportrait__text__img" src={portraitGuillaume} alt="portrait de Guillaume" />
             </div>
@@ -64,24 +72,28 @@ function SelfPortraitArticle() {
                     <p className="selfportrait__service__detail__text">Post production</p>
                 </div>
             </section>
-            <h4 className="selfportrait__title">Le processus</h4>
+            <h4 className="selfportrait__title">Comment ça se passe ?</h4>
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__how">
-                    Youlens est une entreprise de communication par l’image spécialisée
-                    dans la vidéo aérienne en drone ou en drone FPV. Je réalise mes
-                    photographies et vidéos entièrement seul, de la prise de vue jusqu’à
-                    la post production. Je peux travailler partout dans le monde.<br />
+                    Youlens est une entreprise de communication par l’image<br />
+                    spécialisée dans la vidéo aérienne en drone ou en drone FPV.<br />
+                    Je réalise mes photographies et vidéos seul, de la prise de<br />
+                    vue jusqu’à la post production. Je suis basé dans le sud de<br />
+                    la france mais je peux travailler partout dans le monde.<br />
                     <br />
-                    Les projets vont de l’immobilier, du mariage, à la vidéo corporate
-                    d’entreprise en passant par la couverture d’événements exceptionnels
-                    ou encore la mise en avant de lieux culturels ou historiques.  Il m’arrive
-                    également de travailler dans un domaine plus technique dans des usines de
-                    fabrications ou dans le BTP.<br />
+                    Les projets vont de l’immobilier, du mariage, à la vidéo<br />
+                    corporate d’entreprise en passant par la couverture d’événements<br />
+                    exceptionnels ou encore la mise en avant de lieux culturels<br />
+                    ou historiques. Il m’arrive également de travailler dans un<br />
+                    domaine plus technique dans des usines de fabrications ou dans le BTP.<br />
                     <br />
-                    Une prise de contact débouche sur une discussion autour de votre projet
-                    quel qu’il soit, toutes les idées et envies sont réalisables en vidéo tant
-                    qu’elles correspondent à votre image.
+                    Une prise de contact débouche sur une discussion autour de<br />
+                    votre projet quel qu’il soit, toutes les idées et envies<br />
+                    sont réalisables en vidéo tant qu’elles correspondent à votre image.<br />
+                    <br />
+                    Chaque projet est unique et représente un nouveau défi<br />
+                    artistique et technique toujours passionnant à relever.<br />
                 </p>
             </div>
         </article>

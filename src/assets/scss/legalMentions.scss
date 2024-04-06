@@ -1,7 +1,28 @@
+@font-face {
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
+}
+
+// fonts
+
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
+
 // colors
 
-$light-blue: #D9E0E6;
-$dark-blue: #153048;
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
 $white: #FFFFFF;
 
 .background {

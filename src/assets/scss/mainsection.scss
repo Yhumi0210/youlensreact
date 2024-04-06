@@ -1,27 +1,29 @@
 @font-face {
-  font-family: 'junkga-regular';
-  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
-}
-@font-face {
-  font-family: 'junkga-bold';
-  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
-}
-@font-face {
-  font-family: 'junkga-thin';
-  src: url('../../fonts/Jungka-Book.otf') format('opentype')
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
 }
 
-// colors
+@font-face {
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
+}
 
-$light-blue: #D9E0E6;
-$dark-blue: #153048;
-$white: #FFFFFF;
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
+}
 
 // fonts
 
-$bold: 'junkga-bold', sans-serif;
-$regular: 'junkga-regular', sans-serif;
-$thin: 'junkga-thin', sans-serif;
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
+
+// colors
+
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
+$white: #FFFFFF;
 
 // font weight
 
@@ -51,16 +53,17 @@ $style: normal;
   &__h1 {
     position: relative;
     z-index: 1;
-    margin: -23rem 8rem 0 8rem;
-    color: $white;
+    margin: -10rem 8rem 1rem 8rem;
+    color: $light-blue;
     text-shadow: $dark-blue 2px 2px 2px;
+    //letter-spacing: 0.2rem;
   }
   &__arrow {
     position: relative;
     z-index: 1;
     width: 2rem;
     height: 2rem;
-    color: $white;
+    color: $light-blue;
     align-self: center;
     margin-top: 2rem;
     animation: floatArrow 600ms ease-in-out infinite;

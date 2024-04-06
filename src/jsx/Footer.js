@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import ScrollbarContext from './ScrollbarContext'
-import logoclair from '../img/icons/logobleufonce.svg'
+import logofonce from '../img/icons/logofonce.svg'
 
 function Footer() {
 
@@ -19,7 +19,7 @@ function Footer() {
     return (
         <footer id="contact-section" className="footer">
             <div className="footer__container" onClick={scrollToTop}>
-                <img className="logo" src={logoclair} alt="logo Youlens" />
+                <img className="logo" src={logofonce} alt="logo Youlens" />
             </div>
             <section className="footer__info">
                 <h5 className="footer__info__title">

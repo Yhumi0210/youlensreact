@@ -1,29 +1,31 @@
 @font-face {
-  font-family: 'junkga-regular';
-  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'junkga-bold';
-  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'junkga-thin';
-  src: url('../../fonts/Jungka-Book.otf') format('opentype')
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
 }
+
+// fonts
+
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
 
 
 // colors
 
 
-$light-blue: #D9E0E6;
-$dark-blue: #153048;
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
 $white: #FFFFFF;
-
-// fonts
-
-$bold: 'junkga-bold', sans-serif;
-$regular: 'junkga-regular', sans-serif;
-$thin: 'junkga-thin', sans-serif;
 
 // font weight
 
@@ -38,13 +40,13 @@ $weight: 500;
 $style: normal;
 
 .selfportrait {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $text;
   font-optical-sizing: auto;
   font-weight: 300;
   background-color: $dark-blue;
   display: flex;
   flex-direction: column;
-  color: $white;
+  color: $light-blue;
   padding: 2rem 8rem 2rem 8rem;
   &__container {
     align-self: flex-end;
@@ -67,22 +69,22 @@ $style: normal;
     align-items: center;
     margin: 1rem 0 1rem 0;
     &__me {
-      width: 50%;
+      width: 35%;
       font-size: 1.5rem;
-      line-height: 3rem;
+      line-height: 2rem;
       text-indent: 3rem;
-      text-align: justify;
+      text-align: left;
     }
     &__img {
-      width: 40%;
+      width: 30%;
       height: auto;
       object-fit: contain;
     }
     &__how {
       font-size: 1.5rem;
-      line-height: 3rem;
+      line-height: 2rem;
       text-indent: 3rem;
-      text-align: justify;
+      text-align: left;
     }
   }
   &__service {

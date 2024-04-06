@@ -1,16 +1,15 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 .hero {
   z-index: 1;
@@ -23,17 +22,17 @@
 .hero__brand {
   display: flex;
   text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Josefin Sans", sans-serif;
+  color: #EDF4FA;
+  font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   letter-spacing: 0.3rem;
   font-size: 3.5rem;
-  text-shadow: #153048 2px 2px 5px;
+  text-shadow: #0C1217 2px 2px 5px;
 }
 .hero__nav {
   width: 50%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -54,10 +53,10 @@
   position: relative;
   text-decoration: none;
   overflow: hidden;
-  color: #FFFFFF;
+  color: #EDF4FA;
   font-size: 1.2rem;
   text-align: center;
-  text-shadow: #153048 2px 2px 2px;
+  text-shadow: #0C1217 2px 2px 2px;
 }
 .hero__nav__link__page__a:before, .hero__nav__link__page__a:after {
   content: "";
@@ -65,39 +64,39 @@
   bottom: -0.3rem;
   width: 0;
   height: 2px;
-  background-color: #D9E0E6;
+  background-color: #EDF4FA;
   transition: width 300ms ease, left 300ms ease, right 300ms ease;
 }
 .hero__nav__link__page__a:before {
   left: 50%;
   right: 50%;
   transition-delay: 100ms;
-  box-shadow: #153048 2px 2px 5px;
+  box-shadow: #0C1217 2px 2px 5px;
 }
 .hero__nav__link__page__a:after {
   left: 50%;
   right: 50%;
   transition-delay: 100ms;
-  box-shadow: #153048 2px 2px 5px;
+  box-shadow: #0C1217 2px 2px 5px;
 }
 .hero__nav__link__page__a:hover:before, .hero__nav__link__page__a:hover:after {
   width: 100%;
   left: 0;
   right: 0;
-  box-shadow: #153048 2px 2px 5px;
+  box-shadow: #0C1217 2px 2px 5px;
 }
 
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 .main {
   height: 100%;
@@ -113,16 +112,16 @@
 .main__h1 {
   position: relative;
   z-index: 1;
-  margin: -23rem 8rem 0 8rem;
-  color: #FFFFFF;
-  text-shadow: #153048 2px 2px 2px;
+  margin: -10rem 8rem 1rem 8rem;
+  color: #EDF4FA;
+  text-shadow: #0C1217 2px 2px 2px;
 }
 .main__arrow {
   position: relative;
   z-index: 1;
   width: 2rem;
   height: 2rem;
-  color: #FFFFFF;
+  color: #EDF4FA;
   align-self: center;
   margin-top: 2rem;
   animation: floatArrow 600ms ease-in-out infinite;
@@ -138,24 +137,24 @@
 }
 
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 .project {
   margin-top: 0;
-  background-color: #D9E0E6;
+  background-color: #EDF4FA;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -175,7 +174,7 @@
 .project__container__display {
   width: 14rem;
   font-size: 1.2rem;
-  color: #153048;
+  color: #0C1217;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -187,7 +186,7 @@
   bottom: -0.2rem;
   width: 0;
   height: 2px;
-  background-color: #153048;
+  background-color: #0C1217;
   transition: width 300ms ease, left 300ms ease, right 300ms ease;
 }
 .project__container__display:before {
@@ -212,7 +211,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #153048;
+  background-color: #0C1217;
 }
 .project__thumbnail {
   display: grid;
@@ -222,13 +221,22 @@
   margin: 4rem 8rem 6rem 8rem;
 }
 .project__thumbnail__item {
-  color: #153048;
+  color: #0C1217;
 }
-.project__thumbnail__item__medias {
+.project__thumbnail__item .container {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16/9;
+}
+.project__thumbnail__item .container .iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.project__thumbnail__item .container .project__thumbnail__item__medias {
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 .project__thumbnail__item__info {
   width: 100%;
@@ -238,14 +246,14 @@
 }
 .project__thumbnail__item__info__title {
   font-size: 1rem;
-  color: #153048;
+  color: #0C1217;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__thumbnail__item__info__type {
   font-size: 1rem;
-  color: #153048;
+  color: #0C1217;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -254,16 +262,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 7rem 4rem 7rem;
+  margin: 4rem 0 4rem 0;
 }
-.project__gallery__media {
+.project__gallery .container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.project__gallery .container .iframe {
   width: 100%;
-  height: 50rem;
+  aspect-ratio: 16/9;
+}
+.project__gallery .container .project__gallery__media {
+  width: 90%;
+  height: auto;
+  max-height: 34rem;
   object-fit: cover;
-  border-radius: 10px;
 }
 .project__gallery__infos {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -272,14 +289,14 @@
 }
 .project__gallery__infos__title {
   font-size: 1rem;
-  color: #153048;
+  color: #0C1217;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
 .project__gallery__infos__type {
   font-size: 1rem;
-  color: #153048;
+  color: #0C1217;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -287,34 +304,34 @@
 .project__gallery__infos__arrowleft {
   width: 2rem;
   height: 2rem;
-  color: #153048;
+  color: #0C1217;
 }
 .project__gallery__infos__arrowright {
   width: 2rem;
   height: 2rem;
-  color: #153048;
+  color: #0C1217;
 }
 
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 .selfportrait {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  background-color: #153048;
+  background-color: #0C1217;
   display: flex;
   flex-direction: column;
-  color: #FFFFFF;
+  color: #EDF4FA;
   padding: 2rem 8rem 2rem 8rem;
 }
 .selfportrait__container {
@@ -326,7 +343,7 @@
 }
 .selfportrait__line {
   display: block;
-  background-color: #D9E0E6;
+  background-color: #EDF4FA;
   height: 2px;
   width: 100%;
   margin: 1rem 0 1rem 0;
@@ -339,22 +356,22 @@
   margin: 1rem 0 1rem 0;
 }
 .selfportrait__text__me {
-  width: 50%;
+  width: 35%;
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2rem;
   text-indent: 3rem;
-  text-align: justify;
+  text-align: left;
 }
 .selfportrait__text__img {
-  width: 40%;
+  width: 30%;
   height: auto;
   object-fit: contain;
 }
 .selfportrait__text__how {
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2rem;
   text-indent: 3rem;
-  text-align: justify;
+  text-align: left;
 }
 .selfportrait__service {
   display: flex;
@@ -381,20 +398,20 @@
 }
 
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 .footer {
-  background-color: #D9E0E6;
-  color: #153048;
+  background-color: #EDF4FA;
+  color: #0C1217;
   display: flex;
   flex-direction: column;
   padding: 2rem 8rem 2rem 8rem;
@@ -407,7 +424,7 @@
 .footer__info__title:after {
   content: "";
   display: block;
-  background-color: #153048;
+  background-color: #0C1217;
   width: 100%;
   height: 2px;
   margin: 0.5rem 0 0.8rem 0;
@@ -415,7 +432,7 @@
 .footer__info__contact:after {
   content: "";
   display: block;
-  background-color: #153048;
+  background-color: #0C1217;
   width: 100%;
   height: 2px;
   margin: 0.7rem 0 0.8rem 0;
@@ -428,7 +445,7 @@
 }
 .footer__info__contact__number__phone {
   width: 32rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -437,17 +454,17 @@
 .footer__info__contact__number__phone a {
   text-decoration: none;
   list-style-type: none;
-  color: #153048;
+  color: #0C1217;
 }
 .footer__info__contact__number__line {
   display: block;
-  background-color: #153048;
+  background-color: #0C1217;
   height: 1.5rem;
   width: 2px;
 }
 .footer__info__contact__number__mail {
   width: 32rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
@@ -457,7 +474,7 @@
 .footer__info__contact__number__mail a {
   text-decoration: none;
   list-style-type: none;
-  color: #153048;
+  color: #0C1217;
 }
 .footer__info__social {
   margin-bottom: 4rem;
@@ -468,13 +485,13 @@
   justify-content: space-between;
 }
 .footer__info__social__link__insta {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #153048;
+  color: #0C1217;
   position: relative;
 }
 .footer__info__social__link__insta:before {
@@ -484,20 +501,20 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #153048;
+  background-color: #0C1217;
   transition: width 300ms ease-in-out;
 }
 .footer__info__social__link__insta:hover:before {
   width: 100%;
 }
 .footer__info__social__link__behance {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #153048;
+  color: #0C1217;
   position: relative;
 }
 .footer__info__social__link__behance:before {
@@ -507,14 +524,14 @@
   right: 0;
   width: 0%;
   height: 2px;
-  background-color: #153048;
+  background-color: #0C1217;
   transition: width 300ms ease-in-out;
 }
 .footer__info__social__link__behance:hover:before {
   width: 100%;
 }
 .footer__info__rights {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
@@ -524,9 +541,21 @@
 .footer__info__rights a {
   text-decoration: none;
   list-style-type: none;
-  color: #153048;
+  color: #0C1217;
 }
 
+@font-face {
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Didot-Regular";
+  src: url("../../fonts/Didot-Regular.ttf") format("truetype");
+}
 .background {
   margin-top: -8rem;
   width: 100%;
@@ -546,14 +575,14 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #D9E0E6 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #EDF4FA 100%);
 }
 
 .mentions_legales {
   display: flex;
   flex-direction: column;
-  background-color: #D9E0E6;
-  color: #153048;
+  background-color: #EDF4FA;
+  color: #0C1217;
   padding: 0 8rem 4rem 8rem;
 }
 .mentions_legales__bloc {
@@ -573,23 +602,15 @@
 }
 
 @font-face {
-  font-family: "junkga-regular";
-  src: url("../../fonts/Jungka-Regular.otf") format("opentype");
+  font-family: "Josefin";
+  src: url("../../fonts/JosefinSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-bold";
-  src: url("../../fonts/Jungka-Bold.otf") format("opentype");
+  font-family: "Garamond-Regular";
+  src: url("../../fonts/Garamond-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "junkga-thin";
-  src: url("../../fonts/Jungka-Book.otf") format("opentype");
-}
-@font-face {
-  font-family: "josefin";
-  src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-}
-@font-face {
-  font-family: "Didot";
+  font-family: "Didot-Regular";
   src: url("../../fonts/Didot-Regular.ttf") format("truetype");
 }
 * {
@@ -608,19 +629,19 @@
 }
 
 h1 {
-  font-family: "Didot", serif;
+  font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 7rem;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 h2, h3, h4, h5 {
-  font-family: "Didot", serif;
+  font-family: "Josefin", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

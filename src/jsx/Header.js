@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollbarContext from './ScrollbarContext'
-import logolight from '../img/icons/logoblanc.svg'
+import logolight from '../img/icons/logoclair.svg'
 
 function Header() {
     const { getScrollbar } = useContext(ScrollbarContext) // Utilisez le contexte pour accéder à getScrollbar

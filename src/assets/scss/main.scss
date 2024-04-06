@@ -5,31 +5,26 @@
 @import 'footer.scss';
 @import 'legalMentions.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 @font-face {
-  font-family: 'junkga-regular';
-  src: url('../../fonts/Jungka-Regular.otf') format('opentype')
-}
-@font-face {
-  font-family: 'junkga-bold';
-  src: url('../../fonts/Jungka-Bold.otf') format('opentype')
-}
-@font-face {
-  font-family: 'junkga-thin';
-  src: url('../../fonts/Jungka-Book.otf') format('opentype')
-}
-@font-face {
-  font-family: 'josefin';
-  src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-}
-@font-face {
-  font-family: 'Didot';
-  src: url('../../fonts/Didot-Regular.ttf') format('truetype')
+  font-family: 'Josefin';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Garamond-Regular';
+  src: url('../../fonts/Garamond-Regular.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'Didot-Regular';
+  src: url('../../fonts/Didot-Regular.ttf') format('truetype');
+}
 
+// fonts
+
+$titre: 'Didot-Regular', serif;
+$text: 'Garamond-Regular', serif;
+$textjo: 'Josefin', sans-serif;
 
 // colors
 // couleurs de base
@@ -38,16 +33,9 @@
 //$light-blue: #fafff2;
 //$dark-blue: #161915;
 // garder ces couleurs
-$light-blue: #D9E0E6;
-$dark-blue: #153048;
+$light-blue: #EDF4FA;
+$dark-blue: #0C1217;
 $white: #FFFFFF;
-
-// fonts
-
-$bold: 'junkga-bold', sans-serif;
-$regular: 'junkga-regular', sans-serif;
-$thin: 'junkga-thin', sans-serif;
-$josefin : 'josefin', sans-serif;
 
 // font weight
 
@@ -75,17 +63,19 @@ $style: normal;
 }
 
 h1 {
-  font-family: 'Didot', serif;
+  font-family: $textjo;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 7rem;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  //text-transform: uppercase;
 }
 
 h2, h3, h4, h5 {
-  font-family: 'Didot', serif;
+  font-family: $textjo;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  //text-transform: uppercase;
 }
