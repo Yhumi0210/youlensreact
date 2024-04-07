@@ -4,15 +4,13 @@ import './assets/css/main.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router } from 'react-router-dom'
-import SmoothScrollBar from './jsx/SmoothScrollBar'
+//import SmoothScrollBar from './jsx/SmoothScrollBar'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
         <Router>
-            <SmoothScrollBar>
                 <App />
-            </SmoothScrollBar>
         </Router>
     </React.StrictMode>
 )

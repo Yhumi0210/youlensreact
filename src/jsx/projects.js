@@ -14,18 +14,24 @@ export const projects = [
     },
     {
         id: 3,
+        title: 'Espiguette',
+        type: 'photos',
+        images: ['Espiguette01.webp', 'Espiguette02.webp', 'Espiguette03.webp', 'Espiguette04.webp', 'Espiguette05.webp', 'Espiguette06.webp',],
+    },
+    {
+        id: 4,
         title: 'Villa Provence',
         type: 'youtube',
         images: ['j2yMcPuysl4'],
     },
     {
-        id: 4,
+        id: 5,
         title: 'Brasserie Le 80 - Méribel',
         type: 'youtube',
         images: ['bVGJzWWQKM4'],
     },
     {
-        id: 5,
+        id: 6,
         title: 'Domaine Mejan',
         type: 'youtube',
         images: ['xC0wPoG2aEE'],

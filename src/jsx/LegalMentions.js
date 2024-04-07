@@ -3,7 +3,7 @@ import bgimg from '../img/photo/SaintGuilhem14.webp'
 
 function LegalMentions() {
     return (
-        <div>
+        <div className="content">
             <div className="background">
                 <img className="background__img" src={bgimg} alt="Photo Frozen Lake" />
             </div>

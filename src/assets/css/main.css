@@ -153,78 +153,35 @@
   background-color: #EDF4FA;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
   font-family: "Garamond-Regular", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  padding: 2rem 8rem 0 8rem;
 }
 .project__logo {
   align-self: flex-end;
-  margin: 4.5rem 2rem 0 0;
+  margin: 1rem -6rem 0 0;
 }
-.project__container {
-  margin-top: -3rem;
-  width: 25rem;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: space-between;
-  cursor: pointer;
+.project__title {
+  margin-top: 1rem;
 }
-.project__container__display {
-  width: 14rem;
-  font-size: 1.2rem;
-  color: rgba(12, 18, 23, 0.4980392157);
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  padding: 1rem 1rem 0 1rem;
-}
-.project__container__display:before, .project__container__display:after {
-  content: "";
-  position: absolute;
-  bottom: -0.2rem;
-  width: 0;
-  height: 2px;
-  background-color: rgba(12, 18, 23, 0.4980392157);
-  transition: width 300ms ease, left 300ms ease, right 300ms ease;
-}
-.project__container__display:before {
-  left: 50%;
-  right: 50%;
-  transition-delay: 100ms;
-}
-.project__container__display:after {
-  left: 50%;
-  right: 50%;
-  transition-delay: 100ms;
-}
-.project__container__display:hover:before, .project__container__display:hover:after {
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-.project .open {
-  color: #0C1217;
-}
-.project .open:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  height: 2px;
+.project__line {
+  display: block;
   background-color: #0C1217;
+  height: 2px;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
 }
 .project__thumbnail {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
-  margin: 4rem 8rem 6rem 8rem;
+  margin: 4rem 0 6rem 0;
 }
 .project__thumbnail__item {
   color: #0C1217;
+  cursor: pointer;
 }
 .project__thumbnail__item .container {
   display: flex;
@@ -242,13 +199,15 @@
 }
 .project__thumbnail__item .container .iframe {
   width: 100%;
-  aspect-ratio: 16/9;
+  height: auto;
+  object-fit: cover;
 }
 .project__thumbnail__item__info {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 0.5rem;
 }
 .project__thumbnail__item__info__title {
   font-size: 1rem;
@@ -264,58 +223,67 @@
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
-.project__gallery {
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Modifié pour s'assurer qu'il occupe toute la hauteur de la fenêtre de visualisation */
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 4rem 0 4rem 0;
-}
-.project__gallery .container {
-  display: flex;
   justify-content: center;
-  width: 50%;
+  align-items: center;
 }
-.project__gallery .container .iframe {
+.gallery__contain {
   width: 100%;
+  max-width: 70vw; /* Ajustez selon les besoins */
+  margin: auto;
   aspect-ratio: 16/9;
+  overflow: hidden;
 }
-.project__gallery .container .project__gallery__media {
-  width: 90%;
-  height: auto;
-  max-height: 48rem;
+.gallery__contain__video {
+  width: 100%;
+  height: 100%;
+}
+.gallery__photo {
+  max-width: 60%; /* Utilisez max-width au lieu de width pour une meilleure flexibilité */
+  max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
   object-fit: contain;
 }
-.project__gallery__infos {
-  width: 50%;
+.gallery__infos {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
+  width: 80%;
   margin-top: 2rem;
 }
-.project__gallery__infos__title {
+.gallery__infos__titles {
   font-size: 1rem;
-  color: #0C1217;
+  color: #EDF4FA;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
-.project__gallery__infos__type {
+.gallery__infos__type {
   font-size: 1rem;
-  color: #0C1217;
+  color: #EDF4FA;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
-.project__gallery__infos__arrowleft {
+.gallery__infos__arrow {
+  position: relative;
   width: 2rem;
   height: 2rem;
-  color: #0C1217;
-}
-.project__gallery__infos__arrowright {
-  width: 2rem;
-  height: 2rem;
-  color: #0C1217;
+  margin: 0 2rem 0 2rem;
+  color: #EDF4FA;
 }
 
 @font-face {
@@ -653,6 +621,10 @@ h2, h3, h4, h5 {
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
