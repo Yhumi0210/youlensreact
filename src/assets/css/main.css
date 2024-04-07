@@ -188,7 +188,7 @@
   justify-content: center;
   gap: 2px;
   width: 100%;
-  max-height: 20rem;
+  max-height: 30rem;
   aspect-ratio: 16/9;
   overflow: hidden;
 }
@@ -201,6 +201,14 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.project__thumbnail__item .container .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  color: #EDF4FA;
 }
 .project__thumbnail__item__info {
   width: 100%;
@@ -253,6 +261,16 @@
   max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
   object-fit: contain;
 }
+.gallery__cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  color: #EDF4FA;
+  cursor: pointer;
+}
 .gallery__infos {
   position: absolute;
   top: 0;
@@ -284,6 +302,7 @@
   height: 2rem;
   margin: 0 2rem 0 2rem;
   color: #EDF4FA;
+  cursor: pointer;
 }
 
 @font-face {

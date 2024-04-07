@@ -23,18 +23,21 @@ export const projects = [
         title: 'Villa Provence',
         type: 'youtube',
         images: ['j2yMcPuysl4'],
+        thumbnail: 'thumbnailvillaprovence.webp'
     },
     {
         id: 5,
         title: 'Brasserie Le 80 - Méribel',
         type: 'youtube',
         images: ['bVGJzWWQKM4'],
+        thumbnail: 'thumbnailbrasseriele80.webp'
     },
     {
         id: 6,
         title: 'Domaine Mejan',
         type: 'youtube',
         images: ['xC0wPoG2aEE'],
+        thumbnail: 'thumbnaildomainemejan.webp'
     },
     // Ajoutez d'autres projets selon le besoin
 ]

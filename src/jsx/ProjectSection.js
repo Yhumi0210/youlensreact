@@ -118,7 +118,8 @@ const ProjectSection = () => {
             )
         } else { // 'photo'
             return (
-                    <img className='gallery__photo' src={`../img/photo/${item.src}`} alt="Full Screen" onClick={(e) => e.stopPropagation()} />
+                <img className='gallery__photo' src={`../img/photo/${item.src}`} alt="Full Screen"
+                     onClick={(e) => e.stopPropagation()}/>
             )
         }
     }
@@ -130,7 +131,8 @@ const ProjectSection = () => {
         return (
             <div className="gallery" onClick={closeGallery}>
                 <div className="gallery__infos">
-                    <svg onClick={prevImage} className='gallery__infos__arrow w-6 h-6' xmlns='http://www.w3.org/2000/svg'
+                    <svg onClick={prevImage} className='gallery__infos__arrow w-6 h-6'
+                         xmlns='http://www.w3.org/2000/svg'
                          fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor'>
                         <path strokeLinecap='round' strokeLinejoin='round'
                               d='m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'/>
@@ -138,12 +140,19 @@ const ProjectSection = () => {
                     <p className="gallery__infos__titles">{currentItem.title}</p>
                     <p className="gallery__infos__titles">{currentIndex + 1} / {currentImages.length}</p>
                     <p className="gallery__infos__type">PROJET {currentItem.type}</p>
-                <svg onClick={nextImage} className='gallery__infos__arrow w-6 h-6' xmlns='http://www.w3.org/2000/svg'
-                     fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor'>
-                    <path strokeLinecap='round' strokeLinejoin='round'
-                          d='m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'/>
-                </svg>
+                    <svg onClick={nextImage} className='gallery__infos__arrow w-6 h-6'
+                         xmlns='http://www.w3.org/2000/svg'
+                         fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor'>
+                        <path strokeLinecap='round' strokeLinejoin='round'
+                              d='m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'/>
+                    </svg>
                 </div>
+                <svg onClick={closeGallery} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     strokeWidth={1.5}
+                     stroke="currentColor" className="gallery__cross w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                          d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
                 {renderGalleryItem()}
             </div>
         )
@@ -164,17 +173,16 @@ const ProjectSection = () => {
                                 project.images.slice(0, 4).map((imageName, index) => (
                                     <img key={imageName} src={`../img/photo/${imageName}`} alt={imageName}
                                          className='project__thumbnail__item__medias'
-                                         onClick={() => openGallery(project.id, index)} />
+                                         onClick={() => openGallery(project.id, index)}/>
                                 ))
-                            ) : project.type === 'youtube' ? (
-                                // Correction pour utiliser 'videoId' au lieu de 'images' pour l'ID de la vidéo
-                                <img key={project.id} src={`https://img.youtube.com/vi/${project.images[0]}/0.jpg`}
-                                     alt={project.title} className='iframe'
-                                     onClick={() => openGalleryForVideo(project.id)}/>
+                            ) : project.type === 'youtube' && project.thumbnail ? (
+                                <img src={`../img/photo/${project.thumbnail}`} alt={project.title}
+                                     className='iframe'
+                                     onClick={() => openGalleryForVideo(project.id)} />
                             ) : null}
                         </div>
                         <div className='project__thumbnail__item__info'>
-                            <p className='project__thumbnail__item__info__title'>{project.title}</p>
+                        <p className='project__thumbnail__item__info__title'>{project.title}</p>
                             <p className='project__thumbnail__item__info__type'>{project.type.toLowerCase()}</p>
                         </div>
                     </div>

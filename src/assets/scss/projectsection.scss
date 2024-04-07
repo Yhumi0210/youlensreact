@@ -77,20 +77,27 @@ $style: normal;
         justify-content: center;
         gap: 2px;
         width: 100%;
-        max-height: 20rem;
+        max-height: 30rem;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-
         .project__thumbnail__item__medias {
           max-width: 30%;
           height: auto;
           object-fit: cover;
         }
-        .iframe {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
+          .iframe {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+          .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 3rem;
+            color: $light-blue;
+          }
       }
       &__info {
         width: 100%;
@@ -112,6 +119,7 @@ $style: normal;
           font-weight: 300;
           letter-spacing: 0.05rem;
         }
+
       }
     }
   }
@@ -145,6 +153,16 @@ $style: normal;
       max-height: 80vh; /* Limitez la hauteur maximale pour s'assurer que l'image s'adapte bien */
       object-fit: contain;
     }
+  &__cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem;
+    color: $light-blue;
+    cursor: pointer;
+  }
 
   &__infos {
     position: absolute;
@@ -176,6 +194,7 @@ $style: normal;
       height: 2rem;
       margin: 0 2rem 0 2rem;
       color: $light-blue;
+      cursor: pointer;
     }
   }
 }
