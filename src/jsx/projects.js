@@ -21,21 +21,21 @@ export const projects = [
     {
         id: 4,
         title: 'Villa Provence',
-        type: 'youtube',
+        type: 'vidéo',
         images: ['j2yMcPuysl4'],
         thumbnail: 'thumbnailvillaprovence.webp'
     },
     {
         id: 5,
         title: 'Brasserie Le 80 - Méribel',
-        type: 'youtube',
+        type: 'vidéo',
         images: ['bVGJzWWQKM4'],
         thumbnail: 'thumbnailbrasseriele80.webp'
     },
     {
         id: 6,
         title: 'Domaine Mejan',
-        type: 'youtube',
+        type: 'vidéo',
         images: ['xC0wPoG2aEE'],
         thumbnail: 'thumbnaildomainemejan.webp'
     },

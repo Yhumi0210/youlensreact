@@ -62,9 +62,9 @@ const ProjectSection = () => {
 
     const openGalleryForVideo = (projectId) => {
         const selectedProject = projects.find(project => project.id === projectId)
-        if (selectedProject && selectedProject.type === 'youtube') {
+        if (selectedProject && selectedProject.type === 'vidéo') {
             setCurrentImages(selectedProject.images.map(videoId => ({
-                type: 'youtube',
+                type: 'vidéo',
                 src: videoId,
                 title: selectedProject.title, // Inclure le titre ici
             })))
@@ -100,7 +100,7 @@ const ProjectSection = () => {
 
     const renderGalleryItem = () => {
         const item = currentImages[currentIndex]
-        if (item.type === 'youtube') {
+        if (item.type === 'vidéo') {
             return (
                 <div className='gallery__contain'>
                     <iframe
@@ -163,7 +163,7 @@ const ProjectSection = () => {
             <div className="project__logo" onClick={scrollToTop}>
                 <img className="logo" src={logofonce} alt="logo Youlens"/>
             </div>
-            <h2 className="project__title">Mes réalisations</h2>
+            <h2 className="project__title">Projets</h2>
             <p className="project__line"></p>
             <div id='thumbnail' className='project__thumbnail'>
                 {projects.map((project) => (
@@ -175,7 +175,7 @@ const ProjectSection = () => {
                                          className='project__thumbnail__item__medias'
                                          onClick={() => openGallery(project.id, index)}/>
                                 ))
-                            ) : project.type === 'youtube' && project.thumbnail ? (
+                            ) : project.type === 'vidéo' && project.thumbnail ? (
                                 <img src={`../img/photo/${project.thumbnail}`} alt={project.title}
                                      className='iframe'
                                      onClick={() => openGalleryForVideo(project.id)} />

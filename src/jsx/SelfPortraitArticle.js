@@ -30,25 +30,25 @@ function SelfPortraitArticle() {
             <p className="selfportrait__line"></p>
             <div className="selfportrait__text">
                 <p className="selfportrait__text__me">
-                    Je m’appelle Guillaume Court,<br />
+                    Je m’appelle Guillaume Court,<br/>
                     ma passion pour le monde des images
-                    a démarré<br /> il y a 6 ans lors de mes études
-                    de cinéma d’animation 3D.<br />
-                    <br />
-                    Cette voie m’a mené à Paris pendant deux années<br />
-                    durant lesquelles j’ai travaillé pour de grosses productions<br />
-                    de long métrages grand public en tant que lighter.<br />
-                    <br />
-                    Le manque de contact humain et l’absence de travail en<br />
-                    extérieur m’ont mené à retourner dans le sud pour développer<br />
-                    un nouvel aspect de l’image qui est très vite devenu une<br />
-                    passion : la vidéo.<br />
-                    <br />
-                    Les compétences acquises auprès des studios d’animations<br />
-                    m’ont permis d’aiguiser mon oeil artistique et mes<br />
-                    capacités techniques de manière à me plonger toujours<br />
-                    plus vite dans le monde de la vidéo qui est vite<br />
-                    devenu mon travail et passe temps favori.<br />
+                    a démarré il y a 6 ans lors de mes études
+                    de cinéma d’animation 3D.<br/>
+                    <br/>
+                    Cette voie m’a mené à Paris pendant deux années
+                    durant lesquelles j’ai travaillé pour de grosses productions
+                    de long métrages grand public en tant que lighter.<br/>
+                    <br/>
+                    Le manque de contact humain et l’absence de travail en
+                    extérieur m’ont mené à retourner dans le sud pour développer
+                    un nouvel aspect de l’image qui est très vite devenu une
+                    passion : la vidéo.<br/>
+                    <br/>
+                    Les compétences acquises auprès des studios d’animations
+                    m’ont permis d’aiguiser mon oeil artistique et mes
+                    capacités techniques de manière à me plonger toujours
+                    plus vite dans le monde de la vidéo qui est vite
+                    devenu mon travail et passe temps favori.<br/>
                 </p>
                 <img className="selfportrait__text__img" src={portraitGuillaume} alt="portrait de Guillaume" />
             </div>
