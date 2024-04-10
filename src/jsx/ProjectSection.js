@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react'
 import logofonce from '../img/icons/logofonce.svg'
 import { projects } from './projects'
 import ScrollbarContext from './ScrollbarContext'
+import HorizontalScrollWrapper from './HorizontalScrollWrapper'
 
 const ProjectSection = () => {
     const [isGalleryOpen, setIsGalleryOpen] = useState(false)
@@ -161,33 +162,35 @@ const ProjectSection = () => {
     return (
         <section id='project-section' className='project'>
             <div className="project__logo" onClick={scrollToTop}>
-                <img className="logo" src={logofonce} alt="logo Youlens"/>
+                <img className="project__logo__logoproject" src={logofonce} alt="logo Youlens"/>
             </div>
-            <h2 className="project__title">Projets</h2>
-            <p className="project__line"></p>
-            <div id='thumbnail' className='project__thumbnail'>
-                {projects.map((project) => (
-                    <div key={project.id} className='project__thumbnail__item'>
-                        <div className='container'>
-                            {project.type === 'photos' ? (
-                                project.images.slice(0, 4).map((imageName, index) => (
-                                    <img key={imageName} src={`../img/photo/${imageName}`} alt={imageName}
-                                         className='project__thumbnail__item__medias'
-                                         onClick={() => openGallery(project.id, index)}/>
-                                ))
-                            ) : project.type === 'vidéo' && project.thumbnail ? (
-                                <img src={`../img/photo/${project.thumbnail}`} alt={project.title}
-                                     className='iframe'
-                                     onClick={() => openGalleryForVideo(project.id)} />
-                            ) : null}
+                <h2 className="project__title">Mes projets</h2>
+                <p className="project__line"></p>
+            <HorizontalScrollWrapper>
+                <div id='thumbnail' className='project__thumbnail'>
+                    {projects.map((project) => (
+                        <div key={project.id} className='project__thumbnail__item'>
+                            <div className='container'>
+                                {project.type === 'photos' ? (
+                                    project.images.slice(0, 4).map((imageName, index) => (
+                                        <img key={imageName} src={`../img/photo/${imageName}`} alt={imageName}
+                                             className='project__thumbnail__item__medias'
+                                             onClick={() => openGallery(project.id, index)}/>
+                                    ))
+                                ) : project.type === 'vidéo' && project.thumbnail ? (
+                                    <img src={`../img/photo/${project.thumbnail}`} alt={project.title}
+                                         className='iframe'
+                                         onClick={() => openGalleryForVideo(project.id)}/>
+                                ) : null}
+                            </div>
+                            <div className='project__thumbnail__item__info'>
+                                <p className='project__thumbnail__item__info__title'>{project.title}</p>
+                                <p className='project__thumbnail__item__info__type'>{project.type.toLowerCase()}</p>
+                            </div>
                         </div>
-                        <div className='project__thumbnail__item__info'>
-                        <p className='project__thumbnail__item__info__title'>{project.title}</p>
-                            <p className='project__thumbnail__item__info__type'>{project.type.toLowerCase()}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </HorizontalScrollWrapper>
             {renderGallery()}
         </section>
     )
